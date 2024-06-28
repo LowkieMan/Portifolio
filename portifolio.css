@@ -1,0 +1,390 @@
+*{
+    box-sizing: border-box;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*HEADER*/
+header{
+    width: 100%;
+    background-image: url("https://th.bing.com/th/id/R.bdc53f193c4876a40019126cbe555bb9?rik=lgFR%2fnWZhwhchQ&pid=ImgRaw&r=0");
+    color: wheat;
+    display: flex;
+    height: 70px;
+    position: fixed;
+    top: 0px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#title{
+    margin: 0 auto;
+    color: orange;
+    width: 80%;
+    font-size: 50px;
+    text-align: center;
+    padding: 0px;
+    text-shadow: 2px 0px white,-2px 0px blue,0px -1px aqua;
+    border-right: 1px solid white;
+}
+
+#navigation{
+    margin: 0 auto;
+    width: 20%;
+    padding: 5px 10px 5px 30px;
+}
+#nav img{
+    width: 50px;
+    background-color: white;
+    float: right;
+    outline-style: double;
+    outline-width: 5px;
+    outline-color: teal;
+    outline-offset: -5px;
+    border-radius: 10px;
+}
+#nav img:hover{
+    background-color: red;
+    outline-style: double;
+    outline-width: 5px;
+    outline-color: wheat;
+    outline-offset: -5px;
+}
+
+#nav-list ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#nav-list ul li a{
+    text-decoration: none;
+    padding: 10px;
+    margin: 0;
+    display: block;
+    background-color: gray;
+    color: white;
+    text-transform: capitalize;
+    border-bottom: 1px solid black;
+}
+
+#nav-list ul li #last{
+    border-bottom: none;
+}
+#nav-list ul li a:hover{
+    background-color: rgb(4, 4, 109);
+}
+#nav{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+#nav-list{
+    position: absolute;
+    display: none;
+    font-size: 20px;
+    box-shadow: -1px 2px 20px black ;
+    top: 48px;
+}
+#nav:hover #nav-list{
+    display: block;   
+    right: 0;
+    font-size: 20.5px;
+}
+
+/*MAIN*/
+#greet{
+    margin: 70px auto 0 auto;
+    padding: 0;
+    font-size: 30px;
+    background-color: inherit;
+    color: white;
+    position: fixed;
+}
+h3{
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 0;
+    padding: 0;
+    font-size: 40px;
+}
+p,div,ul{
+    margin: 0;
+    padding: 0;
+}
+#home,#about,#experience,#certification,#education,#skills,#project,#achievements,#contact{
+    margin: 0 auto;
+    padding: 0;
+    background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wB6z?ver=eddc");
+}
+             /*IMAGEs*/
+#about-content img{
+    margin: 0 auto;
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;    
+}
+#experience1 img,#certification1 img,#education1 img,#project1 img{
+    width: 100%;
+    height: 200px;
+}
+#image2{
+    width: 50px;
+    height: 50px; 
+    border: none;
+    border-radius: 50%;
+}
+#about-content{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    color: black;
+}
+/*about content flex*/
+#a1,#a2{
+    box-shadow: 2px 0 10px black;
+    border: none;
+    border-radius: 10px;
+    margin: 20px;
+}
+#a1{
+    width: 30%;
+    margin-right: 15px;
+    background-color:aliceblue;
+    height: auto;
+}
+
+#a2{
+    width: 55%;
+    margin-left: 15px;
+    background-color: aliceblue;
+    padding: 115px 15px;
+    font-size: 25px;
+    word-spacing: 10px;
+}
+#a1:hover{
+    outline-style: solid;
+    outline-width: 5px;
+    outline-color: teal;
+    outline-offset: -5px;
+}
+#a2:hover{
+    outline-style: solid;
+    outline-width: 5px;
+    outline-color: teal;
+    outline-offset: -5px;
+    padding: 115px 15px;
+    background-color: rgb(201, 204, 207);
+    word-spacing: 10px;
+}
+i{
+    font-weight: bold;
+    font-style: normal;
+}
+
+#home:target{
+    display: block;
+    padding-top: 100px;
+}
+
+#about{
+    background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wB6z?ver=eddc");
+    color: white;
+    height: 94.2vh;
+    margin-top: 70px auto;
+    padding: 100px;
+}
+#about:target{
+    display: block;
+    padding: 110px 0;
+}
+
+#experience{
+    background-color: rgb(38, 160, 160);
+    display: none;
+    height: 86vh;
+}
+#experience-content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+#experience1{
+    width: 20%;
+    margin: 10px;
+    background-color: teal;
+    color: white;
+}
+#experience1 div{
+    padding: 10px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+#experience:target{
+    display: block;
+    padding: 75px 0;
+}
+
+#certification{
+    background-color: rgb(38, 160, 160);
+    display: none;
+    height: 86vh;
+}
+#certification-content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+#certification-content div{
+    width: 30%;
+    margin: 10px;
+    background-color: teal;
+    color: white;
+}
+#certification:target{
+    display: block;
+    padding: 75px 0;
+    
+}
+
+#education{
+    background-color: rgb(38, 160, 160);
+    display: none;
+    height: 86vh;
+}
+#education-content{
+    display: flex;
+    justify-content: center;
+
+}
+#education-content #education1{
+    width: 20%;
+    margin: 10px;
+    background-color: teal;
+    font-weight: bold;
+    color: aliceblue;
+    text-transform: capitalize;
+}
+
+#education:target{
+    display: block;
+    padding: 75px 0;
+}
+#skills{
+    background-color: rgb(38, 160, 160);
+    display: none;
+    height: 87vh;
+}
+#skills-content{
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: right;
+}
+#skills1{
+    width: 30%;
+    background-color: teal;
+    margin: 20px;
+    color: whitesmoke;
+    text-transform: capitalize;
+    padding: 30px;
+    border: none;
+    border-radius: 10px/60%;
+}
+#skills1 ul{
+    list-style-type: disc;
+}
+h4{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+#skills1:hover{
+    background-color: aliceblue;
+    color: black;
+
+}
+#skills1:hover h4{
+    color: red;
+}
+#skills:target{
+    display: block;
+    padding: 75px 0;
+}
+
+#project{
+    background-color: rgb(38, 160, 160);
+    display: none;
+    height: 90vh;
+}
+#project-content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+ 
+}
+#project1{
+    width: 500px;
+    background-color: teal;
+    margin: 20px;color: white;
+    font-weight: bold;
+    text-transform: capitalize;
+    
+}
+#project1 p{
+    padding: 10px;
+}
+#project:target{
+    display: block;
+    padding: 75px 0;
+}
+#contact{
+    background-color: rgb(38, 160, 160);
+    display: none;
+    height: 86vh;
+}
+
+#contact-content{
+    display: flex;
+    justify-content: center;
+    
+}
+#contact:target{
+    display: block;
+    padding: 75px 0;
+}
+ul{
+    list-style-type: none;
+}
+#contact h3{
+    padding-top: 140px;
+}
+
+/*FOOTER*/
+footer{
+    background-color: rgb(58, 44, 44);
+    color: white;
+    height: 40px;
+    padding: 10px;
+    text-transform: capitalize;
+    text-align: right;
+    position: sticky;
+    position: -webkit-sticky;
+    bottom: 0px;
+    font-family:monospace;
+    font-size: 19px;
+}
+
+main{
+    
+}
+
+/*MAX SCREEN 400PX*/
+/*MAX SCREEN 575PX*/
