@@ -9,6 +9,7 @@
     <title>Wilfred Mamboleo Tinega</title>
     <link rel="icon" href="Icon/mawiti.jpg">
     <link rel="stylesheet" href="portifolio.css">
+    <link rel="stylesheet" href="max-screen575px.css">
 </head>
 <body>
     <header>
@@ -18,8 +19,7 @@
                 <img src="https://th.bing.com/th/id/R.802645409aa2f7211350729901dbe797?rik=AQ%2fe52RYYAskJw&pid=ImgRaw&r=0" alt=""></a>
                 <div id="nav-list">
                     <ul>
-                        <li><a href="#">home</a></li>
-                        <li><a href="#about">About</a></li>
+                        <li><a href="#about">Home</a></li>
                         <li><a href="#experience">Experience</a></li>
                         <li><a href="#certification">Certification</a></li>
                         <li><a href="#education">Education</a></li>
@@ -33,12 +33,13 @@
     </header>
     <main>
         <div id="greet"></div>
-        <div id="home"></div>
         <div id="about">
             <h3>about</h3>
             <div id="about-content">
-                <div id="a1"><img src="Icon/mawiti.jpg" alt=""></div>
-                <div id="a2"><i>Name:</i> Wilfred Mamboleo Tinega <br><i>Phone No:</i> 0740781289 <br><i>Email:</i> tinegamamboleo@gmail.com <br><i>course:</i>BSc. Electrical and Electronics Engineering</div>   
+                <img id="a1" src="Icon/mawiti.jpg">
+                <div id="a2">
+                    <i>Name:</i> Wilfred Mamboleo Tinega <br><i>Phone No:</i> 0740781289 <br><i>Email:</i> tinegamamboleo@gmail.com <br><i>course:</i>BSc. Electrical and Electronics Engineering
+                </div>   
             </div>
         </div>
         <div id="experience">
@@ -69,7 +70,7 @@
                     <img id="image" src="https://th.bing.com/th/id/R.3df13e64fa53fd5583865778aa3afe53?rik=nVAarwz0KwS3jg&pid=ImgRaw&r=0" alt="">
                 </div>
                 <div id="certification1">
-                    <img id="image" src="https://admissions.alxafrica.com/alx_icon-300x169.png" alt="alx">
+                    <img id="image" style="background-color: white;" src="https://admissions.alxafrica.com/alx_icon-300x169.png" alt="alx">
                 </div>
                 <div id="certification1">
                     <img id="image" src="https://th.bing.com/th/id/R.5acb7ab13a9d7ac3fd1b26a55f19f11b?rik=3JVogO7QC2sAdQ&pid=ImgRaw&r=0&sres=1&sresct=1" alt="KESAP">
@@ -81,20 +82,20 @@
             <h3>Education</h3>
             <div id="education-content">
                 <div id="education1">
-                    <img  id="image"  src="https://th.bing.com/th/id/R.3df13e64fa53fd5583865778aa3afe53?rik=nVAarwz0KwS3jg&pid=ImgRaw&r=0" alt="mut logo">
-                    <div>Murang'a-University-of-Technology-MUT[2020-2025] <br> grade: <i>pending</i></div>
+                    <img src="https://th.bing.com/th/id/R.3df13e64fa53fd5583865778aa3afe53?rik=nVAarwz0KwS3jg&pid=ImgRaw&r=0" alt="mut logo">
+                    <div>Murang'a University of Technology [2025] <br> grade: <i>pending</i></div>
                 </div>
                 <div id="education1">
-                    <img id="image" src="https://admissions.alxafrica.com/alx_icon-300x169.png" alt="alx">
-                    <p>alx</p>
+                    <img style="background-color: white;" src="https://admissions.alxafrica.com/alx_icon-300x169.png" alt="alx">
+                    <p>alx AiCE Career Essential [2024] <br>grade: distinction</p>
                 </div>
                 <div id="education1">
-                    <img src="Icon/Kesap.png" alt="">
-                    <p>kesap</p>
+                    <img src="Icon/Kesap.png">
+                    <p>KESAP research centre [2022] <br> grade: credit</p>
                 </div>
                 <div id="education1">
                     <img src="https://th.bing.com/th/id/OIP.7vgNnKbhD0FQNsflaZUUWAHaEI?rs=1&pid=ImgDetMain" alt="">
-                    <div>st. joseph's Nyabigena boys' Secondary school [2016-2019] <br>grade: B+ [plus]</div>
+                    <div>st. joseph's Nyabigena boys' Secondary school [2019] <br>grade: B+ [plus]</div>
                 </div>
             </div>
         </div>
@@ -135,11 +136,11 @@
             <h3>project</h3>
             <div id="project-content">
                 <div id="project1">
-                    <iframe src="http://127.0.0.1:5500/projects/mutportal/form.html" height="350" width="500">Mut Portal</iframe>
+                    <iframe src="http://127.0.0.1:5500/projects/mutportal/form.html">Mut Portal</iframe>
                     <p>i designed UI/UX of murang'a university of Technology portal for employees and student</p>      
                 </div>
                 <div id="project1">
-                    <iframe src="http://127.0.0.1:5500/projects/cal/cal.html" height="350" width="500" ></iframe>
+                    <iframe src="http://127.0.0.1:5500/projects/cal/cal.html"></iframe>
                     <P>i designed UI/UX of basic android calculator</P>
                 </div>
             </div>
@@ -160,6 +161,6 @@
     <footer>
        &copy;2024 wilfred mamboleo tinega  
     </footer>
-    <script src="portifolio.js"></script>
+    <script type="text/javascript" src="portifolio.js"></script>
 </body>
 </html>
