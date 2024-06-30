@@ -10,16 +10,13 @@ html,body{
 /*HEADER*/
 header{
     width: 100%;
-    background-image: url("https://th.bing.com/th/id/R.bdc53f193c4876a40019126cbe555bb9?rik=lgFR%2fnWZhwhchQ&pid=ImgRaw&r=0");
+    background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wB6z?ver=eddc");
     color: wheat;
     display: flex;
     height: 70px;
-    position: fixed;
-    top: 0px;
-    background-position: center;
+    background-position:bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
 }
 
 #title{
@@ -46,6 +43,7 @@ header{
     outline-color: teal;
     outline-offset: -5px;
     border-radius: 10px;
+    display: none;
 }
 #nav img:hover{
     background-color: red;
@@ -77,35 +75,43 @@ header{
 }
 #nav-list ul li a:hover{
     background-color: rgb(4, 4, 109);
+    color: wheat;
 }
 #nav{
-    position: relative;
     display: block;
     width: 100%;
 }
 #nav-list{
-    position: absolute;
-    display: none;
-    font-size: 20px;
+    font-size: 26px;
     box-shadow: -1px 2px 20px black ;
-    top: 48px;
+    top: 70px;
+    position: fixed;
+    right: 0px;
 }
 #nav:hover #nav-list{
     display: block;   
-    right: 0;
-    font-size: 20.5px;
+    right: 0px;
+    top: 70px;
+    position: fixed;
+    
+
 }
 
+
 /*MAIN*/
+main{
+    margin: 0 auto;
+    padding: 0;
+}
 #greet{
     margin: 70px auto;
     padding: 0 0 0 10px;
     font-size: 30px;
     background-color: inherit;
     color: white;
-    position: fixed;
     background-image: linear-gradient(45deg,red,green,white);
-    width: 89.6%;
+    width: 88%;
+    position: absolute;
 }
 h3{
     text-align: center;
@@ -118,12 +124,7 @@ p,div,ul{
     margin: 0;
     padding: 0;
 }
-#home,#about,#experience,#certification,#education,#skills,#project,#achievements,#contact{
-    margin: 0 auto;
-    padding: 0;
-    background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wB6z?ver=eddc");
-}
-             /*IMAGEs*/
+    /*IMAGEs*/
 
 #experience1 img,#certification1 img,#education1 img,#project1 img{
     width: 100%;
@@ -177,28 +178,14 @@ i{
     text-transform: capitalize;
 }
 
-#about{
-    background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wB6z?ver=eddc");
-    color: white;
-    height: 94.2vh;
-    margin-top: 70px auto;
-    padding: 100px;
-}
-#about:target{
-    display: block;
-}
 /*EXPERIENCE*/
 
-#experience{
-    background-color: rgb(38, 160, 160);
-    display: none;
-    height: 86vh;
-}
 #experience-content{
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
 }
+    
 #experience1{
     width: 20%;
     margin: 10px;
@@ -210,13 +197,12 @@ i{
     text-transform: capitalize;
     font-weight: bold;
 }
-#experience:target{
-    display: block;
-    padding: 75px 0;
+#type{
+    display: none;
 }
 
+
 #certification{
-    background-color: rgb(38, 160, 160);
     display: none;
     height: 86vh;
 }
@@ -231,17 +217,8 @@ i{
     background-color: teal;
     color: white;
 }
-#certification:target{
-    display: block;
-    padding: 75px 0;
-    
-}
 
-#education{
-    background-color: rgb(38, 160, 160);
-    display: none;
-    height: 86vh;
-}
+/*EDUCATION*/
 #education-content{
     display: flex;
     justify-content: center;
@@ -256,15 +233,9 @@ i{
     text-transform: capitalize;
 }
 
-#education:target{
-    display: block;
-    padding: 75px 0;
-}
-#skills{
-    background-color: rgb(38, 160, 160);
-    display: none;
-    height: 87vh;
-}
+
+
+/*SKILLS*/
 #skills-content{
     margin: 0 auto;
     width: 100%;
@@ -293,21 +264,18 @@ h4{
 #skills1:hover{
     background-color: aliceblue;
     color: black;
+    transition-duration: 2s;
+    outline-style: solid;
+    outline-color: orange;
+    outline-width: 2px;
 
 }
 #skills1:hover h4{
     color: red;
 }
-#skills:target{
-    display: block;
-    padding: 75px 0;
-}
 
-#project{
-    background-color: rgb(38, 160, 160);
-    display: none;
-    height: 84.2vh;
-}
+
+/*PROJECTS*/
 #project-content{
     display: flex;
     justify-content: center;
@@ -325,25 +293,15 @@ h4{
 #project1 p{
     padding: 10px;
 }
-#project:target{
-    display: block;
-    padding: 75px 0;
-}
-#contact{
-    background-color: rgb(38, 160, 160);
-    display: none;
-    height: 86vh;
-}
 
+
+/*CONTACT*/
 #contact-content{
     display: flex;
     justify-content: center;
     
 }
-#contact:target{
-    display: block;
-    padding: 75px 0;
-}
+
 ul{
     list-style-type: none;
 }
@@ -351,6 +309,40 @@ ul{
     padding-top: 140px;
 }
 
+/*POSITION*/
+header{
+    position: fixed;
+    top: 0px;
+}
+#experience,#certification,#education,#skills,#project,#contact{
+    position:absolute;
+    margin: 110px 0 0 0;
+    width: 88%;
+    background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wB6z?ver=eddc");
+    height: 80vh;
+    display: none;
+    background-size: 100% 100%;
+    
+}
+#certification,#education,#contact{
+    padding: 100px 0 0 0;
+}
+
+#experience,#skills{
+    padding: 70px 0 0 0; 
+}
+
+#about{
+    position:absolute;
+    margin: 110px 0 0 0;
+    width: 88%;
+    background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wB6z?ver=eddc");
+    height: 80vh; 
+    background-size: 100% 100%;
+}
+#about:target,#experience:target,#certification:target,#education:target,#skills:target,#project:target,#contact:target{
+    display: block;
+}
 /*FOOTER*/
 footer{
     background-color: rgb(58, 44, 44);
@@ -359,9 +351,183 @@ footer{
     padding: 10px;
     text-transform: capitalize;
     text-align: right;
-    position: sticky;
-    position: -webkit-sticky;
-    bottom: 0px;
     font-family:monospace;
     font-size: 19px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+iframe{
+    width: 100%;
+    height: 300px;
+    outline: none;
+    border: none;
+}
+
+#floating-anime{
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    bottom: 40px;
+    width: 163px;
+    height: 180px;
+    padding: 30px 10px;
+    background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wB6z?ver=eddc");
+    background-size: 98% 98%;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: aliceblue;
+}
+/*ANIMATION*/
+@keyframes myanime1{
+    0%{
+        bottom: 40px;
+        right: 0;
+        opacity: 0;
+        background-color: black;
+    }
+    20%{
+        bottom: 40px;
+        right: 0;
+    }
+    20%{
+        bottom: 40px;
+        right: 0;    
+    } 
+    30%{
+        bottom: 40px;
+        right: 0;
+    }
+    40%{
+        bottom: 40px;
+        right: 0;
+    }
+    50%{
+        bottom: 40px;
+        right: 0;
+
+    }
+    60%{
+        bottom: 40px;
+        right: 0;
+    }
+    70%{
+        bottom: 40px;
+        right: 0;
+    }
+    80%{
+        bottom: 40px;
+        right: 0;
+    }
+    90%{
+        bottom: 40px;
+        right: 0;
+    }
+    100%{
+        bottom: 40px;
+        right: 0;
+    }
+    
+}
+
+@keyframes myanime2{
+    0%{
+        bottom: 40px;
+        right: 0;
+    }
+    20%{
+        bottom: 40px;
+        right: 0;
+    }
+    20%{
+        bottom: 40px;
+        right: 0;    
+    } 
+    30%{
+        bottom: 40px;
+        right: 0;
+    }
+    40%{
+        bottom: 40px;
+        right: 0;
+    }
+    50%{
+        bottom: 40px;
+        right: 0;
+    }
+    60%{
+        bottom: 40px;
+        right: 0;
+    }
+    70%{
+        bottom: 40px;
+        right: 0;
+    }
+    80%{
+        bottom: 40px;
+        right: 0;
+    }
+    90%{
+        bottom: 40px;
+        right: 0;
+        opacity: 0;
+        background-color: black;
+    }
+    100%{
+        bottom: 40px;
+        right: 0;
+    }
+    
+}
+
+#floating-anime div{
+    padding: 10px;
+    margin: 5px auto;
+    background-color: red;
+    border-radius: 5px;
+    
+    font-weight: bold;
+}
+#floating-anime1{
+    animation-name: myanime1;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-delay: 5s;
+}
+#floating-anime2{
+    animation-name: myanime2;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+#floating-anime div a{
+    color: white;
+    background-color: green;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 1px;
+    padding: 2px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+#floating-anime div a:hover{
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 10px;
+}
+#floating-anime div:hover{
+    border: none;
+    outline-style: solid;
+    outline-color: orange;
+    outline-width: 2px;
+    border-radius: 5px;
+    background-color: greenyellow;
+    color: black;
+}
+#floating-anime1:hover,#floating-anime2:hover{
+    animation: none;
+}
+#ngui-ici{
+    display: none;
+
 }

@@ -9,16 +9,18 @@
     <title>Wilfred Mamboleo Tinega</title>
     <link rel="icon" href="Icon/mawiti.jpg">
     <link rel="stylesheet" href="portifolio.css">
-    <link rel="stylesheet" href="max-screen575px.css">
+    <link rel="stylesheet" href="max-screen480px.css">
 </head>
 <body>
     <header>
         <div id="title">Wilfred Tinega</div>
+        <div id="greet"></div>
         <div id="navigation">
             <div id="nav">
                 <img src="https://th.bing.com/th/id/R.802645409aa2f7211350729901dbe797?rik=AQ%2fe52RYYAskJw&pid=ImgRaw&r=0" alt=""></a>
                 <div id="nav-list">
                     <ul>
+                        <li id="ngui-ici"><a href="#">float</a></li>
                         <li><a href="#about">Home</a></li>
                         <li><a href="#experience">Experience</a></li>
                         <li><a href="#certification">Certification</a></li>
@@ -32,13 +34,16 @@
         </div>        
     </header>
     <main>
-        <div id="greet"></div>
+        <div id="floating-anime">
+            <div id="floating-anime1">Are you hiring? hit, me up  <a href="mailto:tinegamamboleo@gmail.com">here</a></div>
+            <div id="floating-anime2">My Resume <a href="https://tinyurl.com/43muzf9k">here</a></div> 
+        </div>
         <div id="about">
             <h3>about</h3>
             <div id="about-content">
                 <img id="a1" src="Icon/mawiti.jpg">
                 <div id="a2">
-                    <i>Name:</i> Wilfred Mamboleo Tinega <br><i>Phone No:</i> 0740781289 <br><i>Email:</i> tinegamamboleo@gmail.com <br><i>course:</i>BSc. Electrical and Electronics Engineering
+                    <i>Name:</i> Wilfred <span id="hide">Mamboleo </span> Tinega <br><i>Phone No:</i> 0740781289 <br><i>Email:</i> tinegamamboleo@gmail.com <br><i>course:</i> BSc. Electrical and Electronics Engineering
                 </div>   
             </div>
         </div>
@@ -46,18 +51,22 @@
             <h3>Experience</h3>
             <div id="experience-content">
                 <div id="experience1">
+                    <div id="type">Onsite</div>
                     <img src="https://th.bing.com/th/id/R.02f776141c81928c0f6c284a166311f4?rik=GB%2bw9Hks8AemNw&pid=ImgRaw&r=0&sres=1&sresct=1" alt="kenya power logo">
                     <div>Kenya Power and Lighting Company [May 2024-Present] <br>industrial attachement, onsite.</div>
                 </div>
                 <div id="experience1">
+                    <div id="type">Onsite</div>
                     <img src="https://th.bing.com/th/id/OIP.2B476N9uH1XdWlBYoIshnQAAAA?rs=1&pid=ImgDetMain" alt="brookside logo">
                     <div>brookside dairy ltd [july 2023-august 2023] <br>industrial attachement, onsite.</div>
                 </div> 
                 <div id="experience1">
+                    <div id="type">Onsite</div>
                     <img src="https://th.bing.com/th/id/OIP.hVHli2jzinzA-qPcwXwILgHaHE?rs=1&pid=ImgDetMain" alt="Danny electrical solution logo">
                     <div>danny electrical solution [may 2023-june 2023] <br> industrial attachement, onsite.</div>
                 </div>
                 <div id="experience1">
+                    <div id="type">Onsite</div>
                     <img src="https://th.bing.com/th/id/R.3df13e64fa53fd5583865778aa3afe53?rik=nVAarwz0KwS3jg&pid=ImgRaw&r=0" alt="mut logo">
                     <div>Murang'a University of Technology [may 2022- july 2022] <br> internal attachement, onsite.</div>
                 </div>
@@ -87,11 +96,11 @@
                 </div>
                 <div id="education1">
                     <img style="background-color: white;" src="https://admissions.alxafrica.com/alx_icon-300x169.png" alt="alx">
-                    <p>alx AiCE Career Essential [2024] <br>grade: distinction</p>
+                    <div>alx AiCE Career Essential [2024] <br>grade: distinction</div>
                 </div>
                 <div id="education1">
                     <img src="Icon/Kesap.png">
-                    <p>KESAP research centre [2022] <br> grade: credit</p>
+                    <div>KESAP research centre [2022] <br> grade: credit</div>
                 </div>
                 <div id="education1">
                     <img src="https://th.bing.com/th/id/OIP.7vgNnKbhD0FQNsflaZUUWAHaEI?rs=1&pid=ImgDetMain" alt="">
@@ -112,7 +121,7 @@
                         <li>troubleshooting and maintenance of motors and all types of wiring</li>
                     </ul>
                 </div>
-                <div id="skills1">
+                <div id="skills1" class="hide">
                     <h4> soft skills</h4>
                     <ul>
                         <li>microsoft office suite</li>
@@ -121,7 +130,7 @@
                         <li>embedded system progamming</li>
                     </ul>
                 </div>
-                <div id="skills1">
+                <div id="skills1" class="hide">
                     <h4>other skills</h4>
                     <ul>
                         <li>front end web developer</li>

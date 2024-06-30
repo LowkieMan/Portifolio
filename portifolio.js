@@ -1,13 +1,13 @@
 function greetUser(){
     const time= new Date().getHours();
     if (time<11) {
-        return "Good Morning!";
+        return "Hello, Good Morning!";
         
     } else if(time<16){
-        return "Good Afternoon!";
+        return "Hello, Good Afternoon!";
     }
     else{
-        return "Good Evening!";
+        return "Hello, Good Evening!";
     }
 }
 document.getElementById("greet").innerHTML=greetUser();
