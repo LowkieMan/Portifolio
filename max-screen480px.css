@@ -59,7 +59,7 @@
         width: 100%;
         height: inherit;
         position: static;
-        display: block;
+        display: none;
     }
     #about h3{
         padding: 0;
