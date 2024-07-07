@@ -5,44 +5,44 @@
 @media screen and (max-width:575px) {
 
     /*HEADER*/
-    header{
-        display: flex; 
+    #header{
+        position: fixed;
+        width: 100%;
+        top: 0;
+    }
+    button{
+        display: flex;
     }
     #title{
-        margin: 0 auto;
-        padding: 10px 5px;
+        color: black;
         text-align: left;
-        font-size: 35px;
-        width: 70%;
-        color: black;
     }
-    header #greet{
-        width: 100%;
-        color: black;
-        display: block;
-        top: 87px;
-    }
+
     /*MAIN*/
     main{
-        margin: 0 0 0;
-        height: 78vh;
-        background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wB6z?ver=eddc");
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
+        margin: 0;
+        padding: 0;
+    }
+    div,p,ul{
+        margin: 0;
+        padding: 0;
+    }
+    main #greet{
+        margin: 91px 0 0 0;
+        width: 100%;
+        position: static;
     }
 
     /*about*/
     #about{
+        margin: 0 auto;
         width: 100%;
-        height: inherit;
+        height: 90vh;
         position: static;
     }
-    #about h3{
-        padding: 0;
-        margin: 0;
-    }
+
     #about-content{
-        margin: 0 auto;
+        margin: 10px auto;
         display: block;
         width: 90%;
     }
@@ -82,11 +82,12 @@
     
     /*EXPERIENCE*/
     #experience{
-        margin: 110px 0 0 0;
+        margin:0 auto;
         padding: 0px;
         width: 100%;
         height: 78vh;
-        display: none;
+        display: block;
+        position: static;
     }
     #experience h3{
         margin: 0;
@@ -119,20 +120,22 @@
 
     /*CERTIFICATION*/
     #certification{
-        margin: 110px 0 0 0;
+        margin: 0 auto;
         width: 100%;
         padding: 110px 0;
         height: 78vh;
-        display: none;
+        display: block;
+        position: static;
     }
 
     /*EDUCATION*/
     #education{
-        margin: 110px 0 0 0;
+        margin: 0 auto;
         width: 100%;
         padding: 0;
         height: 78vh;
-        display: none;
+        display: none1;
+        position: static;
     }
     #education h3{
         margin: 0;
@@ -167,10 +170,12 @@
 
     /*SKILLS*/
     #skills{
-        margin: 110px 0 0 0;
+        margin: 0 auto;
         width: 100%;
         padding: 0;
         height: auto;
+        position: static;
+        display: block;
     }
     #skills h3{
         padding: 0;
@@ -194,11 +199,11 @@
 
     /*PROJECTS*/
     #project{
-        margin: 110px 0 0 0;
+        margin: 0 auto;
         width: 100%;
         padding: 0px 10px 2px 10px;
-        height: auto;
         height: 78vh;
+        position: static;
     }
     #project h3{
         padding: 0;
@@ -234,12 +239,16 @@
     /*CONTACT*/
 
     #contact{
-        margin: 110px 0 0 0;
+        margin: 0 auto;
         width: 100%;
         height: 78vh;
         color: wheat;
+        position: static;
+        display: block;
     }
-    #floating-anime,#about,#experience,#certification,#education,#skills,#project,#contact,footer{
+
+    /*FOOTER*/
+    footer{
         position: static;
     }
     @keyframes myanime{
@@ -317,7 +326,7 @@
     }
 }
 
-
+/*
 /*MAX SCREEN 480PX*/
 @media screen and (max-width:480px) {
     body{
@@ -326,7 +335,7 @@
     
 }
 
-/*MAX SCREEN 360PX*/
+/*MAX SCREEN 360PX
 @media screen and (max-width:360px){
     
-}
+}*/
