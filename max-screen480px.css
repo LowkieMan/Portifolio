@@ -6,7 +6,7 @@
 
     /*HEADER*/
     header{
-        display: flex;
+        display: flex; 
     }
     #title{
         margin: 0 auto;
@@ -20,34 +20,11 @@
         width: 100%;
         color: black;
         display: block;
+        top: 87px;
     }
-
-    #navigation{
-        width: 30%;
-        padding: 20px 0px 0px 10%;
-
-    }
-    #nav img{
-        display: block;
-        float: unset;
-    }
-    #nav-list{
-        font-size: 14px;
-        box-shadow: -1px 2px 20px black ;
-        top: 70px;
-        position: fixed;
-        display: none;
-    }
-    #nav:hover #nav-list{
-        display: block;   
-        right: 0px;
-        top: 70px;
-        position: fixed;
-    }
-
     /*MAIN*/
     main{
-        margin: 110px 0 0 0;
+        margin: 0 0 0;
         height: 78vh;
         background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wB6z?ver=eddc");
         background-size: 100% 100%;
@@ -59,7 +36,6 @@
         width: 100%;
         height: inherit;
         position: static;
-        display: none;
     }
     #about h3{
         padding: 0;
