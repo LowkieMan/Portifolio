@@ -24,6 +24,10 @@ header{
     padding: 0px;
     text-shadow: 2px 0px white,-2px 0px blue,0px -1px aqua;
 }
+header a{
+    text-transform: capitalize;
+    font-size: 22px;
+}
 
 /*MAIN*/
 main{
@@ -41,23 +45,6 @@ main{
     position: -webkit-sticky;
     top: 89.5px;
 }
-h3{
-    text-align: center;
-    text-transform: capitalize;
-    margin-top: 0;
-    padding: 0;
-    font-size: 40px;
-}
-p,div,ul{
-    margin: 0;
-    padding: 0;
-}
-    /*IMAGEs*/
-
-#experience1 img,#certification1 img,#education1 img,#project1 img{
-    width: 100%;
-    height: 200px;
-}
 #image2{
     width: 50px;
     height: 50px; 
@@ -72,6 +59,12 @@ p,div,ul{
     width: 88%;
     background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wB6z?ver=eddc");
     background-size: 100% 100%;
+    height: 80vh;  
+}
+#about h1{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 60px;
 }
 #about-content{
     margin: 0 auto;
@@ -123,7 +116,13 @@ i{
     width: 88%;
     background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wB6z?ver=eddc");
     display: none;
-    background-size: 100% 100%;    
+    background-size: 100% 100%;
+    height: 80vh;     
+}
+#experience h1{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 60px;
 }
 #experience-content{
     display: flex;
@@ -145,6 +144,10 @@ i{
 #type{
     display: none;
 }
+#experience1 img{
+    width: 100%;
+    height: 200px;
+}
 #experience:target{
     display: block;
 }
@@ -156,7 +159,13 @@ i{
     width: 88%;
     background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wB6z?ver=eddc");
     display: none;
-    background-size: 100% 100%;    
+    background-size: 100% 100%;
+    height: 80vh;      
+}
+#certification h1{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 60px;
 }
 #certification-content{
     display: flex;
@@ -169,6 +178,10 @@ i{
     background-color: teal;
     color: white;
 }
+#certification1 img{
+    width: 100%;
+    height: 200px;
+}
 #certification:target{
     display: block;
 }
@@ -180,7 +193,13 @@ i{
     width: 88%;
     background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wB6z?ver=eddc");
     display: none;
-    background-size: 100% 100%;    
+    background-size: 100% 100%;
+    height: 80vh;      
+}
+#education h1{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 60px;
 }
 #education-content{
     display: flex;
@@ -195,6 +214,10 @@ i{
     color: aliceblue;
     text-transform: capitalize;
 }
+#education1 img{
+    width: 100%;
+    height: 200px;
+}
 #education:target{
     display: block;
 }
@@ -202,11 +225,17 @@ i{
 /*SKILLS*/
 #skills{
     position:absolute;
-    margin:135px 0 0;
+    margin:0 auto;
     width: 88%;
     background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wB6z?ver=eddc");
     display: none;
-    background-size: 100% 100%;    
+    background-size: 100% 100%;
+    height: 80vh;     
+}
+#skills h1{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 60px;
 }
 #skills-content{
     margin: 0 auto;
@@ -256,7 +285,13 @@ h4{
     width: 88%;
     background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wB6z?ver=eddc");
     display: none;
-    background-size: 100% 100%;    
+    background-size: 100% 100%; 
+    height: 80vh;  
+}
+#project h1{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 60px;
 }
 #project-content{
     display: flex;
@@ -270,10 +305,15 @@ h4{
     margin: 20px;color: white;
     font-weight: bold;
     text-transform: capitalize;
-    
 }
 #project1 p{
     padding: 10px;
+}
+iframe{
+    width: 100%;
+    height: 300px;
+    outline: none;
+    border: none;
 }
 #project:target{
     display: block;
@@ -282,11 +322,17 @@ h4{
 /*CONTACT*/
 #contact{
     position:absolute;
-    margin:135px 0 0;
+    margin:0 0;
     width: 88%;
     background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wB6z?ver=eddc");
     display: none;
-    background-size: 100% 100%;    
+    background-size: 100% 100%; 
+    height: 80vh;  
+}
+#contact h1{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 60px;
 }
 #contact-content{
     display: flex;
@@ -302,6 +348,7 @@ ul{
 #contact:target{
     display: block;
 }
+
 /*FOOTER*/
 footer{
     background-color: rgb(58, 44, 44);
@@ -316,13 +363,6 @@ footer{
     bottom: 0;
     width: 100%;
 }
-iframe{
-    width: 100%;
-    height: 300px;
-    outline: none;
-    border: none;
-}
-
 #floating-anime{
     margin: 0 auto;
     position: absolute;
@@ -486,8 +526,4 @@ iframe{
 }
 #floating-anime1:hover,#floating-anime2:hover{
     animation: none;
-}
-#ngui-ici{
-    display: none;
-
 }
