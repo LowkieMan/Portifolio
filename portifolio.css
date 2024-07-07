@@ -10,13 +10,9 @@ html,body{
 /*HEADER*/
 header{
     width: 100%;
-    background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wB6z?ver=eddc");
-    color: wheat;
-    display: flex;
-    height: 70px;
-    background-position:bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: aqua;
+    position: fixed;
+    top: 0;
 }
 
 #title{
@@ -29,89 +25,21 @@ header{
     text-shadow: 2px 0px white,-2px 0px blue,0px -1px aqua;
 }
 
-#navigation{
-    margin: 0 auto;
-    width: 20%;
-    padding: 5px 10px 5px 30px;
-}
-#nav img{
-    width: 50px;
-    background-color: white;
-    float: right;
-    outline-style: double;
-    outline-width: 5px;
-    outline-color: teal;
-    outline-offset: -5px;
-    border-radius: 10px;
-    display: none;
-}
-#nav img:hover{
-    background-color: red;
-    outline-style: double;
-    outline-width: 5px;
-    outline-color: wheat;
-    outline-offset: -5px;
-}
-
-#nav-list ul{
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-#nav-list ul li a{
-    text-decoration: none;
-    padding: 10px;
-    margin: 0;
-    display: block;
-    background-color: gray;
-    color: white;
-    text-transform: capitalize;
-    border-bottom: 1px solid black;
-}
-
-#nav-list ul li #last{
-    border-bottom: none;
-}
-#nav-list ul li a:hover{
-    background-color: rgb(4, 4, 109);
-    color: wheat;
-}
-#nav{
-    display: block;
-    width: 100%;
-}
-#nav-list{
-    font-size: 26px;
-    box-shadow: -1px 2px 20px black ;
-    top: 70px;
-    position: fixed;
-    right: 0px;
-}
-#nav:hover #nav-list{
-    display: block;   
-    right: 0px;
-    top: 70px;
-    position: fixed;
-    
-
-}
-
-
 /*MAIN*/
 main{
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
 }
 #greet{
-    margin: 70px auto;
+    margin: 89.5px 0 0 0;
     padding: 0 0 0 10px;
     font-size: 30px;
-    background-color: inherit;
     color: white;
     background-image: linear-gradient(45deg,red,green,white);
-    width: 88%;
-    position: absolute;
+    width: 100%;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 89.5px;
 }
 h3{
     text-align: center;
@@ -138,6 +66,13 @@ p,div,ul{
 }
 
 /*ABOUT*/
+#about{
+    position:absolute;
+    margin:0 auto;
+    width: 88%;
+    background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wB6z?ver=eddc");
+    background-size: 100% 100%;
+}
 #about-content{
     margin: 0 auto;
     display: flex;
@@ -177,9 +112,19 @@ i{
     font-style: normal;
     text-transform: capitalize;
 }
+#about:target{
+    display: block;
+}
 
 /*EXPERIENCE*/
-
+#experience{
+    position:absolute;
+    margin:0 auto;
+    width: 88%;
+    background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wB6z?ver=eddc");
+    display: none;
+    background-size: 100% 100%;    
+}
 #experience-content{
     display: flex;
     justify-content: center;
@@ -200,11 +145,18 @@ i{
 #type{
     display: none;
 }
+#experience:target{
+    display: block;
+}
 
-
+/*CERTIFICATION*/
 #certification{
+    position:absolute;
+    margin:0 auto;
+    width: 88%;
+    background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wB6z?ver=eddc");
     display: none;
-    height: 86vh;
+    background-size: 100% 100%;    
 }
 #certification-content{
     display: flex;
@@ -217,8 +169,19 @@ i{
     background-color: teal;
     color: white;
 }
+#certification:target{
+    display: block;
+}
 
 /*EDUCATION*/
+#education{
+    position:absolute;
+    margin:0 auto;
+    width: 88%;
+    background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wB6z?ver=eddc");
+    display: none;
+    background-size: 100% 100%;    
+}
 #education-content{
     display: flex;
     justify-content: center;
@@ -232,10 +195,19 @@ i{
     color: aliceblue;
     text-transform: capitalize;
 }
-
-
+#education:target{
+    display: block;
+}
 
 /*SKILLS*/
+#skills{
+    position:absolute;
+    margin:135px 0 0;
+    width: 88%;
+    background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wB6z?ver=eddc");
+    display: none;
+    background-size: 100% 100%;    
+}
 #skills-content{
     margin: 0 auto;
     width: 100%;
@@ -273,9 +245,19 @@ h4{
 #skills1:hover h4{
     color: red;
 }
-
+#skills:target{
+    display: block;
+}
 
 /*PROJECTS*/
+#project{
+    position:absolute;
+    margin:0 auto;
+    width: 88%;
+    background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wB6z?ver=eddc");
+    display: none;
+    background-size: 100% 100%;    
+}
 #project-content{
     display: flex;
     justify-content: center;
@@ -293,54 +275,31 @@ h4{
 #project1 p{
     padding: 10px;
 }
-
+#project:target{
+    display: block;
+}
 
 /*CONTACT*/
+#contact{
+    position:absolute;
+    margin:135px 0 0;
+    width: 88%;
+    background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wB6z?ver=eddc");
+    display: none;
+    background-size: 100% 100%;    
+}
 #contact-content{
     display: flex;
     justify-content: center;
     
 }
-
 ul{
     list-style-type: none;
 }
 #contact h3{
     padding-top: 140px;
 }
-
-/*POSITION*/
-header{
-    position: fixed;
-    top: 0px;
-}
-#experience,#certification,#education,#skills,#project,#contact{
-    position:absolute;
-    margin: 110px 0 0 0;
-    width: 88%;
-    background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wB6z?ver=eddc");
-    height: 80vh;
-    display: none;
-    background-size: 100% 100%;
-    
-}
-#certification,#education,#contact{
-    padding: 100px 0 0 0;
-}
-
-#experience,#skills{
-    padding: 70px 0 0 0; 
-}
-
-#about{
-    position:absolute;
-    margin: 110px 0 0 0;
-    width: 88%;
-    background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wB6z?ver=eddc");
-    height: 80vh; 
-    background-size: 100% 100%;
-}
-#about:target,#experience:target,#certification:target,#education:target,#skills:target,#project:target,#contact:target{
+#contact:target{
     display: block;
 }
 /*FOOTER*/
@@ -378,6 +337,7 @@ iframe{
     background-position: center;
     color: aliceblue;
 }
+
 /*ANIMATION*/
 @keyframes myanime1{
     0%{
