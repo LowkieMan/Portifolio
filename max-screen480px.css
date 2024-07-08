@@ -10,25 +10,39 @@
         width: 100%;
         top: 0;
     }
-    button{
-        display: flex;
-    }
     #title{
         color: black;
         text-align: left;
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    #title a{
+        padding: 12px;
+        font-size: 70%;
+    }
+    #title a:hover{
+        color: orange;
+    }
+    #lists{
+        display: none;
     }
 
     /*MAIN*/
     main{
-        margin: 0;
+        position: static;
+        margin: 71.4px 0 0 0;
         padding: 0;
+        background-color: red;
     }
-    div,p,ul{
+    div,p,ul,h1{
         margin: 0;
         padding: 0;
     }
     main #greet{
-        margin: 91px 0 0 0;
+        
         width: 100%;
         position: static;
     }
@@ -39,7 +53,7 @@
         width: 100%;
         position: static;
         padding: 0;
-        height: 85vh;
+        height: 80vh;
     }
 
     #about-content{
@@ -88,6 +102,7 @@
         width: 100%;
         display: block;
         position: static;
+        font-size: 90%;
     }
     #experience h3{
         margin: 0;
@@ -241,6 +256,10 @@
         display: block;
         height: 40vh;
         padding: 50px 0 0 0;
+        
+    }
+    #contact h1{
+        font-size: 40px;
     }
 
     /*FOOTER*/
