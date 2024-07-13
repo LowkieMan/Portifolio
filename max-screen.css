@@ -1,0 +1,274 @@
+/*MAX SCREEN 575PX*/
+*{
+    box-sizing: border-box;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+}
+@media screen and (max-width:768px) {
+    /*HEADER*/
+    header #title{
+        font-size: 30px;
+        line-height: 50px;
+    }
+    #title a{
+        padding: 0;
+        color: red;
+    }
+    #lists ul li{
+        padding: 0;
+    }
+     header #lists ul li a{
+        font-size: 15px;
+        padding:  4px;
+        line-height: 60px;
+    }
+
+    /*MAIN*/
+    main{
+        margin-top: 55px;
+    }
+    #about,#experience,#certification,#education,#skills,#project,#contact{
+        position: fixed;
+    }
+    /*ABOUT*/
+    #about h1{
+        margin: 0;
+        padding: 0;
+    }
+    #about-content #a1{
+        height: 350px;        
+    }
+    #about-content #a2{
+        height: 350px;
+        font-size: 20px;
+        padding: 100px 0 0 20px;
+
+    }
+    /*EXPERIENCE*/
+    #experience-content #experience1 img{
+        height: 150px;
+    }
+    /*EDUCATION*/
+    #experience h1{
+        margin: 0;
+        padding: 0;
+    }
+    #education-content #education1 img{
+        height: 150px;
+    }
+    
+    /*SKILLS*/
+    #skills h1{
+        font-size: 30px;
+        margin: 0;
+        padding: 0;
+    }
+    #skills-content #skills1{
+        height: auto;
+    }
+    #skills-content #skills1 ul{
+        margin: 0;
+        padding: 0;
+    }
+    #skills-content #skills1 h4{
+        margin: 0;
+        padding: 0;
+    }   
+    #skills-content #skills1 ul{
+        font-size: 15px;
+    }
+    /*PROJECT*/
+    #project h1{
+        margin: 0;
+        padding: 0;
+        font-size: 30px;
+    }
+    
+    /*CONTACT*/
+    #contact h1{
+        font-size: 100px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+}
+@media screen and (max-width:425px) {
+    /*HEADER*/
+    header{
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        position: fixed;
+        top: 0;
+    }
+    #title{
+        padding: 0;
+        width: 100%;
+        margin: 0 auto;
+    }
+    #title a{
+        font-size: 40px;
+        padding: 0;
+        margin: 0;
+        line-height: 0;
+        text-align: left;
+    }
+    header #lists{
+        display: none;
+
+    }
+
+    /*MAIN*/
+    main{
+        margin: 50px 0 0 0;
+        position: static;
+        height: auto;
+        background-size: 100% 100%;
+    }
+    #greet{
+        font-size: 12px;
+        position: fixed;
+        margin: 0px auto;
+    }
+    #about{
+        position: static;
+        padding: 5px;
+        display: block;
+        width: 100%;
+        height: fit-content;
+    }
+    #about h1{
+        margin: 0px;
+        padding: 10px;
+        font-size: 30px;
+    }
+    #about-content{
+        display: block;
+        width: 100%;
+        height: fit-content;
+        margin: 0 auto;
+    }
+    #about-content #a1{
+        margin: 0 auto;
+        width: 100%;
+        height: 200px;
+        display: block;
+        border: none;
+        border-radius: 10px 10px 0 0;
+    }
+    #about-content #a2{
+        width: 100%;
+        padding: 10px;
+        margin: 0 auto;
+        height: fit-content;
+        border-radius: 0 0 10px 10px;
+    }
+    #about-content #a1:hover,#about-content #a2:hover{
+        outline: none;
+
+    }
+    #experience{
+        background-image: inherit;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+    #experience #experience-content{
+        display: block;
+        margin: 5px auto;
+        width: 100%;
+    }
+    #experience1{
+        display: flex;
+        width: 90%;
+        margin: 10px auto;
+        padding: 0;
+        border-radius: 10px;
+    }
+    #experience #experience-content #experience1 img{
+        height: inherit;
+        width: 60px;
+        border-radius: 10px 0 0 10px;
+    }
+    #experience #experience-content #experience1 div{
+        font-size: 15px;
+        padding: 5px;
+    }
+    #certification{
+        display: none;
+    }
+    #education-content{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        
+    }
+    #education-content #education1{
+        display: flex;
+        margin: 10px auto;
+        width: 90%;
+        border-radius: 10px;
+    }
+    #education-content #education1 img{
+        height: inherit;
+        width: 60px;
+        border-radius: 10px 0 0 10px;
+    }
+    #education-content #education1 div{
+        padding: 5px;
+    }
+    #skills{
+        width: 100%;
+        padding: 0;
+        margin: 0 auto;
+        height: fit-content;
+    }
+    #skills-content{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    #skills-content #skills1{
+        width: 90%;
+        margin: 5px auto;
+    }
+    #skills-content #skills1 .hide{
+        display: none;
+    }
+    #project{
+        margin: 0 auto;
+        padding: 0;
+        height: fit-content;
+    }
+    #project-content{
+        display: block;
+        width: 100%;
+    }
+    #project1{
+        width: 90%;
+        margin: 0 auto;
+    }
+    iframe{
+        width: 100%;
+    }
+    #contact{
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+    }
+    #contact-content{
+        display: block;
+    }
+    #floating-anime{
+        display: block;
+        width: 100%;
+        font-size: 30px;
+    }
+
+    #experience,#education,#skills,#project,#contact{
+        position: static;
+        display: block;
+    }
+}
