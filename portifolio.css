@@ -8,43 +8,48 @@ html,body{
 }
 
 /*HEADER*/
-#header{
+header{
     margin: 0 auto;
     padding: 0;
+    width: 100%;
     display: flex;
     background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wB6z?ver=eddc");
+    position: fixed;
+    top: 0;
+    background-position: bottom;
+    background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 
 #title{
     margin: 0 auto;
-    color: orange;
     font-size: 50px;
     text-align: center;
     padding: 0;
     text-shadow: 2px 0px white,-2px 0px blue,0px -1px aqua;
     width: 50%;  
 }
-#title h1{
-    padding: 10px;
-}
 #title a{
     text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
 }
 #title a:hover{
-    color: black;
-}
-#list{
-    width: 50%;
+    color: white;
 }
 #lists ul{
     display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+#lists ul li{
+    padding: 20px 0 0 0;
 }
 #lists ul li a{
     margin: 0px;
     text-transform: capitalize;
     text-decoration: none;
-    padding: 10px;
+    padding: 50px 10px 0 0;
     color: white;
     font-weight: bold;
     font-size: 25px;
@@ -55,9 +60,18 @@ html,body{
 
 /*MAIN*/
 main{
-    margin: 0 auto;
+    margin: 68px auto;
     padding: 0;
+    width: 100%;
+    background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wB6z?ver=eddc");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    position: absolute;
+    width: 100%;
+    height: 78.5vh;
 }
+/*GREETINGS*/
 #greet{
     margin: 0 auto;
     padding: 0 0 0 10px;
@@ -65,25 +79,19 @@ main{
     color: white;
     background-image: linear-gradient(45deg,red,green,white);
     width: 100%;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 89.5px;
-}
-#image2{
-    width: 50px;
-    height: 50px; 
-    border: none;
-    border-radius: 50%;
 }
 
 /*ABOUT*/
-#about{
-    position:absolute;
-    margin:0 auto;
-    width: 88%;
-    background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wB6z?ver=eddc");
+#about,#experience,#certification,#education,#skills,#project,#contact{
+    position: absolute;
+    width: 100%;
+    height: 78.3vh;
+    background-image: inherit;
     background-size: 100% 100%;
-    height: 80vh;  
+
+}
+#about{
+    margin: 0 auto;
 }
 #about h1{
     text-align: center;
@@ -135,13 +143,9 @@ i{
 
 /*EXPERIENCE*/
 #experience{
-    position:absolute;
-    margin:0 auto;
-    width: 88%;
-    background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wB6z?ver=eddc");
-    display: none;
+    background-image: inherit;
     background-size: 100% 100%;
-    height: 80vh;     
+    display: none;   
 }
 #experience h1{
     text-align: center;
@@ -178,13 +182,9 @@ i{
 
 /*CERTIFICATION*/
 #certification{
-    position:absolute;
-    margin:0 auto;
-    width: 88%;
-    background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wB6z?ver=eddc");
-    display: none;
+    background-image: inherit;
     background-size: 100% 100%;
-    height: 80vh;      
+    display: none;     
 }
 #certification h1{
     text-align: center;
@@ -212,13 +212,9 @@ i{
 
 /*EDUCATION*/
 #education{
-    position:absolute;
-    margin:0 auto;
-    width: 88%;
-    background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wB6z?ver=eddc");
-    display: none;
-    background-size: 100% 100%;
-    height: 80vh;      
+    background-image: inherit;
+    background-size: 100% 100%;  
+    display: none;   
 }
 #education h1{
     text-align: center;
@@ -248,13 +244,9 @@ i{
 
 /*SKILLS*/
 #skills{
-    position:absolute;
-    margin:0 auto;
-    width: 88%;
-    background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wB6z?ver=eddc");
-    display: none;
+    background-image: inherit;
     background-size: 100% 100%;
-    height: 80vh;     
+    display: none;
 }
 #skills h1{
     text-align: center;
@@ -280,6 +272,7 @@ i{
 }
 #skills1 ul{
     list-style-type: disc;
+    display: block;
 }
 h4{
     text-align: center;
@@ -304,13 +297,9 @@ h4{
 
 /*PROJECTS*/
 #project{
-    position:absolute;
-    margin:0 auto;
-    width: 88%;
-    background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wB6z?ver=eddc");
+    background-image: inherit;
+    background-size: 100% 100%;
     display: none;
-    background-size: 100% 100%; 
-    height: 80vh;  
 }
 #project h1{
     text-align: center;
@@ -345,13 +334,9 @@ iframe{
 
 /*CONTACT*/
 #contact{
-    position:absolute;
-    margin:0 0;
-    width: 88%;
-    background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wB6z?ver=eddc");
+    background-image: inherit;
+    background-size: 100% 100%;
     display: none;
-    background-size: 100% 100%; 
-    height: 80vh;  
 }
 #contact h1{
     text-align: center;
@@ -365,6 +350,8 @@ iframe{
 }
 ul{
     list-style-type: none;
+    display: flex;
+    justify-content: center;
 }
 #contact h3{
     padding-top: 140px;
@@ -372,6 +359,69 @@ ul{
 #contact:target{
     display: block;
 }
+#image2{
+    width: 40px;
+    height: 40px; 
+    border: none;
+    border-radius: 50%;
+}
+
+/*FLOATING HIRE*/
+#floating-anime{
+    margin: 0 auto;
+    background-size: 98% 98%;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: aliceblue;
+    display: flex;
+}
+
+#floating-anime div{
+    padding: 10px;
+    margin: 5px 10px;
+    background-color: red;
+    border-radius: 5px;
+    font-weight: bold;
+}
+#floating-anime1{
+    animation-name: myanime1;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+#floating-anime2{
+    animation-name: myanime2;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+#floating-anime div a{
+    color: white;
+    background-color: green;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 1px;
+    padding: 2px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+#floating-anime div a:hover{
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 10px;
+}
+#floating-anime div:hover{
+    border: none;
+    outline-style: solid;
+    outline-color: orange;
+    outline-width: 2px;
+    border-radius: 5px;
+    background-color: greenyellow;
+    color: black;
+}
+#floating-anime1:hover,#floating-anime2:hover{
+    animation: none;
+}
+
 
 /*FOOTER*/
 footer{
@@ -383,25 +433,10 @@ footer{
     text-align: right;
     font-family:monospace;
     font-size: 19px;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
 }
-#floating-anime{
-    margin: 0 auto;
-    position: absolute;
-    right: 0;
-    bottom: 40px;
-    width: 163px;
-    height: 180px;
-    padding: 30px 10px;
-    background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wB6z?ver=eddc");
-    background-size: 98% 98%;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: aliceblue;
-}
-
 /*ANIMATION*/
 @keyframes myanime1{
     0%{
@@ -502,52 +537,4 @@ footer{
         right: 0;
     }
     
-}
-
-#floating-anime div{
-    padding: 10px;
-    margin: 5px auto;
-    background-color: red;
-    border-radius: 5px;
-    
-    font-weight: bold;
-}
-#floating-anime1{
-    animation-name: myanime1;
-    animation-iteration-count: infinite;
-    animation-duration: 5s;
-    animation-delay: 5s;
-}
-#floating-anime2{
-    animation-name: myanime2;
-    animation-iteration-count: infinite;
-    animation-duration: 5s;
-}
-#floating-anime div a{
-    color: white;
-    background-color: green;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 1px;
-    padding: 2px;
-    border-radius: 10px;
-    margin-top: 5px;
-}
-#floating-anime div a:hover{
-    background-color: white;
-    color: black;
-    border: none;
-    border-radius: 10px;
-}
-#floating-anime div:hover{
-    border: none;
-    outline-style: solid;
-    outline-color: orange;
-    outline-width: 2px;
-    border-radius: 5px;
-    background-color: greenyellow;
-    color: black;
-}
-#floating-anime1:hover,#floating-anime2:hover{
-    animation: none;
 }
