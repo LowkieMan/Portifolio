@@ -69,13 +69,14 @@ html, body{
     #lists ul li a:hover{
         background-color: black;
     }
+
     /*MAIN*/
     main{
         margin: 8vh 0 0 0;
         height: auto;
         background-size: 100% 100%;
     }
-    
+
     #greet{
         font-size: 15px;
         margin: 0 auto;
@@ -113,6 +114,8 @@ html, body{
         margin: 0 auto;
         height: fit-content;
         border-radius: 0 0 10px 10px;
+        font-size: 25px;
+        text-wrap: wrap;
     }
     #about-content #a1:hover,#about-content #a2:hover{
         outline: none;
@@ -225,4 +228,25 @@ html, body{
         position: static;
         display: block;
     }
+    /*FOOTER*/
+    /*FOOTER*/
+    footer{
+        font-size: 15px;
+        width: 100%;
+        display: block;
+    }
+
+    footer p{
+        width: 100%;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+    }
+
+    footer ul{
+        display: flex;
+        justify-content: right;
+        width: 100%;
+        flex-wrap: wrap;
+}
 }
