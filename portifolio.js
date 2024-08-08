@@ -50,12 +50,14 @@ showNav.addEventListener("click",function(){
     document.getElementById("showNav").style.display="none";
     document.getElementById("hideNav").style.display="block";
     document.getElementById("lists").style.left="0%";
+    document.getElementById("greet").style.zIndex="-1";
 })
 //hiding navigation bar
 hideNav.addEventListener("click",function(){
     document.getElementById("showNav").style.display="block";
     document.getElementById("hideNav").style.display="none";
-    document.getElementById("lists").style.left="-50%";
+    document.getElementById("lists").style.left="-50%";    
+    document.getElementById("greet").style.zIndex="1";
 });
 
 //when you click the navigation links, hide the nav bar list
