@@ -6,130 +6,86 @@ html, body{
     margin: 0;
     padding: 0;
 }
-@media screen and (max-width:425px) {
-    /*HEADER*/
-    header #title{
-        font-size: 30px;
-        line-height: 50px;
-    }
-    #title a{
-        padding: 0;
-        color: red;
-    }
-    #lists ul li{
-        padding: 0;
-    }
-     header #lists ul li a{
-        font-size: 15px;
-        padding:  4px;
-        line-height: 60px;
-    }
 
-    /*MAIN*/
-    main{
-        margin-top: 55px;
-    }
-    #about,#experience,#certification,#education,#skills,#project,#contact{
-        position: fixed;
-    }
-    /*ABOUT*/
-    #about h1{
-        margin: 0;
-        padding: 0;
-    }
-    #about-content #a1{
-        height: 350px;        
-    }
-    #about-content #a2{
-        height: 350px;
-        font-size: 20px;
-        padding: 100px 0 0 20px;
-
-    }
-    /*EXPERIENCE*/
-    #experience-content #experience1 img{
-        height: 150px;
-    }
-    /*EDUCATION*/
-    #experience h1{
-        margin: 0;
-        padding: 0;
-    }
-    #education-content #education1 img{
-        height: 150px;
-    }
-    
-    /*SKILLS*/
-    #skills h1{
-        font-size: 30px;
-        margin: 0;
-        padding: 0;
-    }
-    #skills-content #skills1{
-        height: auto;
-    }
-    #skills-content #skills1 ul{
-        margin: 0;
-        padding: 0;
-    }
-    #skills-content #skills1 h4{
-        margin: 0;
-        padding: 0;
-    }   
-    #skills-content #skills1 ul{
-        font-size: 15px;
-    }
-    /*PROJECT*/
-    #project h1{
-        margin: 0;
-        padding: 0;
-        font-size: 30px;
-    }
-    
-    /*CONTACT*/
-    #contact h1{
-        font-size: 100px;
-        font-family: 'Courier New', Courier, monospace;
-    }
-    
-}
 @media screen and (max-width:425px) {
+
     /*HEADER*/
     header{
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
         display: block;
-        margin: 0 auto;
-        width: 100%;
-        position: fixed;
-        top: 0;
+        height: 8vh;
     }
+
     #title{
-        padding: 0;
-        width: 100%;
         margin: 0 auto;
-    }
-    #title a{
-        font-size: 40px;
-        padding: 0;
-        margin: 0;
-        line-height: 0;
         text-align: left;
+        padding: 0;
+        width: 100%; 
+        display: block;
     }
-    header #lists{
-        display: none;
 
+    #title a{
+        margin-left: 15%;
+        padding: 2px;
+        color: red;
+        display: inline-block;
+        font-size: 25px;
+        width: auto;
+        height: inherit;
     }
 
+    #lists{
+        margin: 0 auto;
+        padding: 0;
+        background-image: inherit;
+        width: 50%;
+        position: fixed;
+        height: 100%;
+        left: -50%;
+        transition-duration: 1s;
+        top: 8vh;
+    }
+
+    #lists ul{
+        display: block;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+    
+    #lists ul li a{
+        margin: 0 auto;
+        display: block;
+        text-transform: capitalize;
+        text-decoration: none;
+        padding: 5px;
+        color: white;
+        font-weight: bold;
+        width: 100%; 
+    }
+
+    #lists ul li a:hover{
+        background-color: black;
+    }
     /*MAIN*/
     main{
-        margin: 50px 0 0 0;
-        position: static;
+        margin: 8vh 0 0 0;
         height: auto;
         background-size: 100% 100%;
     }
+
+    
+    #about,#experience,#certification,#education,#skills,#project,#contact{
+        display: none;
+    }
+
+
     #greet{
-        font-size: 12px;
-        position: fixed;
-        margin: 0px auto;
+        font-size: 15px;
+        margin: 0 auto;
+        padding: 0px;
     }
     #about{
         position: static;
