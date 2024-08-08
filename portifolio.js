@@ -13,6 +13,14 @@ function greetUser(){
 }
 document.getElementById("greet").innerHTML=greetUser();
 
+//hiding all elements until called
+document.getElementById("about").style.display="none";
+document.getElementById("experience").style.display="none";
+document.getElementById("certification").style.display="none";
+document.getElementById("education").style.display="none";
+document.getElementById("skills").style.display="none";
+document.getElementById("project").style.display="none";
+document.getElementById("contact").style.display="none";
 /*MAIN functions on the nav bar and display option*/
 const showNav=document.getElementById("showNav");
 const hideNav=document.getElementById("hideNav");

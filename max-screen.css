@@ -75,13 +75,7 @@ html, body{
         height: auto;
         background-size: 100% 100%;
     }
-
     
-    #about,#experience,#certification,#education,#skills,#project,#contact{
-        display: none;
-    }
-
-
     #greet{
         font-size: 15px;
         margin: 0 auto;
