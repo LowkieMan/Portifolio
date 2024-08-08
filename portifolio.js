@@ -1,3 +1,4 @@
+//greetings function
 function greetUser(){
     const time= new Date().getHours();
     if (time<=11) {
@@ -11,3 +12,7 @@ function greetUser(){
     }
 }
 document.getElementById("greet").innerHTML=greetUser();
+
+/*MAIN functions on the nav bar and display option*/
+
+//#about,#experience,#certification,#education,#skills,#project,#contact
