@@ -173,9 +173,10 @@
         font-size: 12px;
         padding: 5px;
     }
-
+    
+    /*certification*/
     #certification{
-        margin: 20vh auto;
+        margin: 20vh auto; 
         height: auto;
     }
 

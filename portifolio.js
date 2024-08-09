@@ -13,7 +13,7 @@ function greetUser(){
 }
 document.getElementById("greet").innerHTML=greetUser();
 
-//hiding all elements until called in for
+//hiding all elements until called in for in the button
 document.getElementById("about").style.display="none";
 document.getElementById("experience").style.display="none";
 document.getElementById("certification").style.display="none";
