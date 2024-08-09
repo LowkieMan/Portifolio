@@ -15,7 +15,7 @@
         padding: 0;
         width: 100%;
         display: block;
-        height: 8%;
+        height: 9%;
     }
 
     #title1{
@@ -45,7 +45,7 @@
         height: 100%;
         left: -50%;
         transition-duration: 1s;
-        top: 8vh;
+        top: 9vh;
         background-color: red;
     }
 
@@ -73,7 +73,7 @@
 
     /*MAIN*/
     main{
-        margin: 8vh 0 0 0;
+        margin: 9vh 0 0 0;
         background-size: 100% 100%;
         padding: 0 0 0.8vh 0;
         width: 100%;
@@ -92,7 +92,7 @@
 
     #about{
         margin: 0.5vh auto;
-        padding: 0;
+        padding: 0.25vh;
         display: block;
         width: 90%;
         height: auto;
