@@ -79,13 +79,45 @@ main{
 }
 /*LANDING PAGE*/
 #landing{
-    margin: 10px auto;
-    padding: 20px;
+    margin: 5vh auto;
+    padding: 2vh;
     width: 80%;
     background-image: inherit;
     background-size: 100% 100%;
     border: none;
     border-radius: 20px;
+    color: gold;
+}
+
+#landing h1{
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+#landing p{
+    margin: 0 auto;
+    text-transform: capitalize;
+    text-wrap: nowrap;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#landing button{
+    text-transform: capitalize;
+    border: none;
+    background-color: black;
+    box-shadow: 1px 1px 10px white;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+#landing button:hover{
+    box-shadow: 2px 2px 10px rgb(15, 228, 15);
+    background-color: yellow;
+    color: black;
 }
 
 /*ABOUT*/
