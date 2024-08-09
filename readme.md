@@ -11,12 +11,6 @@ have a look [here](https://wilfredtinega.netlify.app)
 - Contact Page
 <img src="Icon/contact.png" style="width: 200px; height: 100px; border: 5px solid green;">
 
-## To Do
-- Make it responsive with `@media query`
-- Test it with different `browsers`
-- Make it `live` or deploy it using `netlify` web hosting
-- Carry out `SEO`
-
 ## Author
 - Wilfred Mamboleo Tinega ```@2024```
 

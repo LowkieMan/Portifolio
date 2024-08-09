@@ -46,6 +46,7 @@
         left: -50%;
         transition-duration: 1s;
         top: 8vh;
+        background-color: red;
     }
 
     #lists ul{
