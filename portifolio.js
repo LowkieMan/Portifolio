@@ -24,7 +24,7 @@ document.getElementById("contact").style.display="none";
 /*MAIN functions on the nav bar and display option*/
 const showNav=document.getElementById("showNav");
 const hideNav=document.getElementById("hideNav");
-const landing=document.getElementById("title");
+const landing=document.getElementById("title1");
 const about=document.getElementById("aboutPage");//functions of nav list links
 const experience=document.getElementById("experiencePage");
 const certification=document.getElementById("certificationPage");
