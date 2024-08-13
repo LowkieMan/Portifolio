@@ -1,15 +1,6 @@
-# Wilfred Mamboleo Tinega Portifolio
-have a look [here](https://wilfredtinega.netlify.app)
+# AiCE Career Essentials
+have a look [here](https://aice.netlify.app)
 
-## Snippets
-- Home contents
-<img src="Icon/about.png" style="width: 200px; height: 100px; border: 5px solid green;">
-
-- Experience Page
-<img src="Icon/experience.png" style="width: 200px; height: 100px; border: 5px solid green;">
-
-- Contact Page
-<img src="Icon/contact.png" style="width: 200px; height: 100px; border: 5px solid green;">
 
 ## Author
 - Wilfred Mamboleo Tinega ```@2024```
