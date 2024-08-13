@@ -1,9 +1,17 @@
 @media screen and (max-width:425px) {
     *{
         box-sizing: border-box;
+
     }
     
-    html, body{
+    html{
+        margin: 0;
+        padding: 0;
+        border: 4px solid red;
+        overflow-y: hidden;
+        height: 100%;
+    }
+    body{
         margin: 0;
         padding: 0;
         height: 100%;
@@ -73,19 +81,15 @@
 
     /*MAIN*/
     main{
-        margin: 8vh 0 0 0;
+        margin: 10vh 0 0 0;
         background-size: 100% 100%;
         padding: 0 0 0.8vh 0;
         width: 100%;
         height: 100%;
+        overflow-y: hidden;
+        border: 2px solid green;
     }
 
-    #greet{
-        font-size: 12px;
-        margin: 0 auto;
-        padding: 0;
-        width: 100%;
-    }
     #landing{
         margin: 0.5vh auto;
         padding: 0.25vh;
@@ -174,20 +178,6 @@
         padding: 5px;
     }
     
-    /*certification*/
-    #certification{
-        margin: 20vh auto; 
-        height: auto;
-    }
-
-    #certification h1{
-        font-size: 35px;
-    }
-
-    #certification  #certification1 img{
-        height: 100%;
-
-    }
     #education{
         margin: 8.5vh auto;
         height: auto;
@@ -305,6 +295,7 @@
         font-size: 15px;
         width: 100%;
         display: block;
+        height: 12%;
     }
 
     footer p{
@@ -319,5 +310,6 @@
         justify-content: right;
         width: 100%;
         flex-wrap: wrap;
+        font-size: larger;
 }
 }

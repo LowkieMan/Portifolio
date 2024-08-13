@@ -1,33 +1,17 @@
-//greetings function
-function greetUser(){
-    const time= new Date().getHours();
-    if (time<=11) {
-        return "Hello, Good Morning!";
-        
-    } else if(time<=16){
-        return "Hello, Good Afternoon!";
-    }
-    else{
-        return "Hello, Good Evening!";
-    }
-}
-document.getElementById("greet").innerHTML=greetUser();
-
 //hiding all elements until called in for in the button
 document.getElementById("about").style.display="none";
 document.getElementById("experience").style.display="none";
-document.getElementById("certification").style.display="none";
 document.getElementById("education").style.display="none";
 document.getElementById("skills").style.display="none";
 document.getElementById("project").style.display="none";
 document.getElementById("contact").style.display="none";
+
 /*MAIN functions on the nav bar and display option*/
 const showNav=document.getElementById("showNav");
 const hideNav=document.getElementById("hideNav");
 const landing=document.getElementById("title1");
 const about=document.getElementById("aboutPage");//functions of nav list links
 const experience=document.getElementById("experiencePage");
-const certification=document.getElementById("certificationPage");
 const education=document.getElementById("educationPage");
 const skills=document.getElementById("skillsPage");
 const project=document.getElementById("projectPage");
@@ -38,7 +22,6 @@ landing.addEventListener("click",function(){
     document.getElementById("landing").style.display="block";
     document.getElementById("about").style.display="none";
     document.getElementById("experience").style.display="none";
-    document.getElementById("certification").style.display="none";
     document.getElementById("education").style.display="none";
     document.getElementById("skills").style.display="none";
     document.getElementById("project").style.display="none";
@@ -69,7 +52,6 @@ about.addEventListener("click",function(){
     document.getElementById("landing").style.display="none";
     document.getElementById("about").style.display="block";
     document.getElementById("experience").style.display="none";
-    document.getElementById("certification").style.display="none";
     document.getElementById("education").style.display="none";
     document.getElementById("skills").style.display="none";
     document.getElementById("project").style.display="none";
@@ -85,23 +67,6 @@ experience.addEventListener("click",function(){
     document.getElementById("landing").style.display="none";
     document.getElementById("about").style.display="none";
     document.getElementById("experience").style.display="block";
-    document.getElementById("certification").style.display="none";
-    document.getElementById("education").style.display="none";
-    document.getElementById("skills").style.display="none";
-    document.getElementById("project").style.display="none";
-    document.getElementById("contact").style.display="none";
-});
-
-//CERTIFICATION
-certification.addEventListener("click",function(){
-    document.getElementById("showNav").style.display="block";
-    document.getElementById("hideNav").style.display="none";
-    document.getElementById("lists").style.left="-50%";
-    
-    document.getElementById("landing").style.display="none";
-    document.getElementById("about").style.display="none";
-    document.getElementById("experience").style.display="none";
-    document.getElementById("certification").style.display="block";
     document.getElementById("education").style.display="none";
     document.getElementById("skills").style.display="none";
     document.getElementById("project").style.display="none";
@@ -117,7 +82,6 @@ education.addEventListener("click",function(){
     document.getElementById("landing").style.display="none";
     document.getElementById("about").style.display="none";
     document.getElementById("experience").style.display="none";
-    document.getElementById("certification").style.display="none";
     document.getElementById("education").style.display="block";
     document.getElementById("skills").style.display="none";
     document.getElementById("project").style.display="none";
@@ -133,7 +97,6 @@ skills.addEventListener("click",function(){
     document.getElementById("landing").style.display="none";
     document.getElementById("about").style.display="none";
     document.getElementById("experience").style.display="none";
-    document.getElementById("certification").style.display="none";
     document.getElementById("education").style.display="none";
     document.getElementById("skills").style.display="block";
     document.getElementById("project").style.display="none";
@@ -149,7 +112,6 @@ project.addEventListener("click",function(){
     document.getElementById("landing").style.display="none";
     document.getElementById("about").style.display="none";
     document.getElementById("experience").style.display="none";
-    document.getElementById("certification").style.display="none";
     document.getElementById("education").style.display="none";
     document.getElementById("skills").style.display="none";
     document.getElementById("project").style.display="block";
@@ -164,7 +126,6 @@ contact.addEventListener("click",function(){
     document.getElementById("landing").style.display="none";
     document.getElementById("about").style.display="none";
     document.getElementById("experience").style.display="none";
-    document.getElementById("certification").style.display="none";
     document.getElementById("education").style.display="none";
     document.getElementById("skills").style.display="none";
     document.getElementById("project").style.display="none";

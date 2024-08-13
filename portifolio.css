@@ -63,22 +63,10 @@ main{
     margin: 10vh 0 0 0;
     padding: 0 0 20px 0;
     width: 100%;
-    background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wB6z?ver=eddc");
-    background-repeat: repeat;
-    background-size: 100% 100%;
     background-attachment: fixed;
     height: 100%;
 }
 
-/*GREETINGS*/
-#greet{
-    margin: 10px auto;
-    padding: 0 0 0 10px;
-    font-size: 30px;
-    color: white;
-    background-image: linear-gradient(45deg,red,green,white);
-    width: 100%;
-}
 /*LANDING PAGE*/
 #landing{
     margin: 5vh auto;
@@ -220,46 +208,11 @@ i{
     height: 200px;
 }
 
-/*CERTIFICATION*/
-#certification{
-    margin: 10px auto;
-    padding: 20px;
-    width: 80%;
-    background-image: inherit;
-    background-size: 100% 100%;
-    border: none;
-    border-radius: 20px;
-    height: 100%;
-}    
-
-#certification h1{
-    text-align: center;
-    text-transform: capitalize;
-    font-size: 60px;
-}
-#certification-content{
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
-}
-#certification-content div{
-    width: 30%;
-    margin: 10px;
-    background-color: teal;
-    color: white;
-}
-#certification1 img{
-    width: 100%;
-    height: 200px;
-}
-
 /*EDUCATION*/
 #education{
     margin: 10px auto;
     padding: 20px;
     width: 80%;
-    background-image: inherit;
-    background-size: 100% 100%;
     border: none;
     border-radius: 20px; 
     height: 100%;  
