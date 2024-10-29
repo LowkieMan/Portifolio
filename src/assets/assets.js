@@ -1,21 +1,21 @@
- import add_photo_alternate from "./add_photo_alternate.png";
+ import photo from "./photo.png";
 import add from "./add.png";
 import chat from "./chat.png"
 import help from "./help.png";
 import history from "./history.png";
-import lightbulb from "./lightbulb.png";
 import menu from "./menu.png";
 import mic from "./mic.png";
 import send from "./send.png";
 import settings from "./settings.png";
+import person from "./person.png";
+
 
  export const assets = {
-    add_photo_alternate,
+    photo,
     add,
     chat,
     help,
     history,
-    lightbulb,
     menu,
     mic,
     send,

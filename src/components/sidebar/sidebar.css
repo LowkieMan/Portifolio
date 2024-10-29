@@ -10,13 +10,12 @@
     flex-direction: column;
     justify-content: space-between;
     border-right: 1px solid green;
-    background-color: #597190;
+    background-color: #7d8999;
     padding: 25px 15px;
 }
 
 .sidebar img{
     width: 20px;
-    background-color: gray;
     border-radius: 50%;
 }
 
