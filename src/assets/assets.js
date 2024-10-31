@@ -8,6 +8,10 @@ import mic from "./mic.png";
 import send from "./send.png";
 import settings from "./settings.png";
 import person from "./person.png";
+import aice from "./aice.png";
+import lightbulb from "./lightbulb.png";
+import code from "./code.png";
+import explore from "./explore.png"
 
 
  export const assets = {
@@ -19,5 +23,10 @@ import person from "./person.png";
     menu,
     mic,
     send,
-    settings
+    settings,
+    person,
+    aice,
+    lightbulb,
+    code,
+    explore
  }
