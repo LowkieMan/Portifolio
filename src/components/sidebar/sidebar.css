@@ -9,8 +9,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border-right: 1px solid green;
-    background-color: #7d8999;
+    background-color: #f6f9ff;
     padding: 25px 15px;
 }
 
