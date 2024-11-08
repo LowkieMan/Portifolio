@@ -26,9 +26,6 @@ const Main = () => {
                         <img src={assets.send} alt="" />
                     </div>
                 </div>
-                <p className="bottom-info">
-                        AiCE may display inaccurate info, including about people, so double-check its responses. Your privacy and AiCE Apps 
-                    </p>
             </div>
         </div>
     )
