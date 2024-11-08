@@ -1,5 +1,4 @@
 import React from "react";
-import "./main.css";
 import { assets } from "../../assets/assets";
 const Main = () => {
 

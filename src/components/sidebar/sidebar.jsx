@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./sidebar.css";
 import { assets } from "../../assets/assets"
 
 const Sidebar = () => {
