@@ -1,24 +1,25 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
-* {
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Outfit;
 }
 
-#root {
+#root{
   min-height: 100vh;
   display: flex;
 }
 
 /*Sidebar */
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.sidebar {
+.sidebar{
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -27,18 +28,18 @@
   padding: 25px 15px;
 }
 
-.sidebar img {
+.sidebar img{
   width: 20px;
   border-radius: 50%;
 }
 
-.sidebar .menu {
+.sidebar .menu{
   display: block;
   margin-left: 10px;
   cursor: pointer;
 }
 
-.sidebar .new-chat {
+.sidebar .new-chat{
   margin-top: 50px;
   display: inline-flex;
   align-items: center;
@@ -51,18 +52,19 @@
   text-transform: capitalize;
 }
 
-.sidebar.recent {
+.sidebar.recent{
   display: flex;
   flex-direction: column;
 }
 
-.sidebar .recent-title {
+.sidebar .recent-title{
   margin-top: 30px;
   margin-bottom: 20px;
   text-transform: capitalize;
+
 }
 
-.sidebar .recent-entry {
+.sidebar .recent-entry{
   display: flex;
   align-items: start;
   gap: 10px;
@@ -71,32 +73,33 @@
   border-radius: 50px;
   color: #282828;
   cursor: pointer;
+
 }
 
-.sidebar .recent-entry:hover {
+.sidebar .recent-entry:hover{
   background-color: #e6eaf1;
 }
 
-.sidebar .bottom {
+.sidebar .bottom{
   display: flex;
   flex-direction: column;
   text-transform: capitalize;
 }
 
-.sidebar .bottom-item {
+.sidebar .bottom-item{
   padding: 10px;
   cursor: pointer;
 }
 
 /*Main */
-.main {
+.main{
   flex: 1;
   min-height: 100vh;
   padding-bottom: 15vh;
   position: relative;
 }
 
-.main .nav {
+.main .nav{
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -104,11 +107,11 @@
   padding: 20px;
   color: #585858;
 }
-
-.main img {
+.main img{
   width: 40px;
   height: 40px;
   border-radius: 50%;
+
 }
 
 .main-container {
@@ -124,31 +127,31 @@
   padding: 20px;
 }
 
-.main span {
+.main span{
   background-image: linear-gradient(16deg, #4b90ff, #ff5546);
   background-clip: text;
   color: transparent;
 }
 
-.main .cards {
-  margin: 0 auto;
+.main .cards {  
+  margin: 0 auto; 
   display: flex;
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
 }
 
-.main .card {
+.main .card{
   height: 150px;
   max-width: 250px;
   padding: 15px;
   background-color: #f0f4f9;
   border: 10px;
   position: relative;
-  cursor: pointer;
+  cursor: pointer; 
 }
 
-.main .card img {
+.main .card img{
   padding: 5px;
   position: absolute;
   background-color: white;
@@ -157,12 +160,13 @@
   right: 10px;
 }
 
-.main .card p {
+.main .card p{
   color: #585858;
   font-size: 17px;
+
 }
 
-.main .card:hover {
+.main .card:hover{
   background-color: #dfe4e1;
 }
 
@@ -174,17 +178,17 @@
   width: 67%;
 }
 
-.search-box {
+.search-box{
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  background-color: #f0f4f9;
+  background-color:  #f0f4f9;
   padding: 10px;
   border-radius: 50px;
 }
 
-.search-box input {
+.search-box input{
   flex: 1;
   background: none;
   border: none;
@@ -193,17 +197,15 @@
   font-size: 18px;
 }
 
-.search-box img {
+.search-box img{
   cursor: pointer;
   width: 20px;
   height: 20px;
 }
 
-.search-box div {
+.search-box div{
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 5px;
 }
-
-/*# sourceMappingURL=index.css.map */
