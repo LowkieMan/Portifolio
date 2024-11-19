@@ -97,14 +97,8 @@
     font-size: 22px;
     padding: 10px;
     color: #585858;
-
-    span {
-      background-image: linear-gradient(16deg, #4b90ff, #ff5546);
-      background-clip: text;
-      color: transparent;
-      font-weight: 900;
-    }
-
+    background-color: #4b90ff;
+    
     img {
         width: 50px;
         height: 50px;
@@ -117,6 +111,7 @@
     margin: auto;
     font-size: 56px;
     font-weight: 900;
+
     span {
         background-image: linear-gradient(16deg, #4b90ff, #ff5546);
         background-clip: text;
@@ -131,18 +126,19 @@
     align-items: center;
     background-color: #f0f4f9;
     justify-content: space-between;
-    margin: 0 auto;
+    margin: 0 20px 20px;
     padding: 10px;
 
     input{
       flex: 1;
-      font-size: 32px;
+      font-size: 22px;
       border: none;
       outline: none;
       background-color: inherit;
-      padding-left: 20px;
+      padding-left: 10px;
 
       ::placeholder{
+        font-size: 22px;
         color:#585858;
       }
     }
@@ -150,7 +146,6 @@
     div{
       display: flex;
       justify-content: space-between;
-      align-items: center;
 
       img{
         width: 20px;
