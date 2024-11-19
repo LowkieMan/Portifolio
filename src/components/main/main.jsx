@@ -10,20 +10,15 @@ const Main = () => {
             </div>
 
             <div className="main-container">
-                <div className="greet">
-                    <p><span>Hello, Dev.</span></p>
-                    <p>how can I help you today?</p>
-                </div>
+                <span>Hello, Dev.</span>
             </div>
-
-            <div className="main-bottom">
-                <div className="search-box">
-                    <input type="text" placeholder="Enter a prompt here" />
-                    <div> 
-                        <img src={assets.photo} alt="" />
-                        <img src={assets.mic} alt="" />
-                        <img src={assets.send} alt="" />
-                    </div>
+            
+            <div className="search-box">
+                <input type="text" placeholder="Enter a prompt here" />
+                <div> 
+                    <img src={assets.photo} alt="" />
+                    <img src={assets.mic} alt="" />
+                    <img src={assets.send} alt="" />
                 </div>
             </div>
         </div>
