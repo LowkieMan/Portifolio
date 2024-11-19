@@ -1,10 +1,11 @@
-import { GoogleGenerativeAI } from "@google/generative-ai";
-configs()
-  
-  const apiKey = process.env.GEMINI_API_KEY;
-  const genAI = new GoogleGenerativeAI(apiKey);
-  
-  const model = genAI.getGenerativeModel({
+import { GoogleGenerativeAI } from "@google/generative-ai" 
+import dotenv from "dotenv";
+dotenv.config()
+
+const apiKey = process.env.API_KEY;
+const genAI = new GoogleGenerativeAI(apiKey);
+
+const model = genAI.getGenerativeModel({
     model: "gemini-1.5-pro",
   });
   
@@ -16,16 +17,18 @@ configs()
     responseMimeType: "text/plain",
   };
   
-  async function runChat(prompt) {
+  async function runChat() {
     const chatSession = model.startChat({
       generationConfig,
       history: [
       ],
     });
-  
-    const prompt = "What is react js"
+     
+    const prompt = "hello"
     const result = await chatSession.sendMessage(prompt);
     console.log(result.response.text());
+
   }
   
-  runChat();
+runChat();
+export default runChat;
