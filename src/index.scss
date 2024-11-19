@@ -97,7 +97,6 @@
     font-size: 22px;
     padding: 10px;
     color: #585858;
-    background-color: #4b90ff;
     
     img {
         width: 50px;
@@ -109,7 +108,7 @@
 
   .main-container {
     margin: auto;
-    font-size: 56px;
+    font-size: 40px;
     font-weight: 900;
 
     span {
@@ -155,9 +154,24 @@
 
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:425px) {
+
+  #root{
+    display: block;
+    margin: 0 auto;
+  }
+
   .sidebar{
     display: none;
+  }
+
+  .main{
+    min-height: 100vh;
+
+    .search-box{
+      margin: 0 auto;
+      padding: 10px;
+    }
   }
   
 }
