@@ -7,7 +7,6 @@
 }
 
 #root {
-  min-height: 100vh;
   display: flex;
 }
 
@@ -142,7 +141,7 @@
     display: none;
   }
   .main {
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     justify-content: space-between;
   }
@@ -151,7 +150,10 @@
     padding: 10px;
   }
   .main .search-box input {
-    font-size: 16px;
+    font-size: 15px;
+  }
+  .main .search-box input ::placeholder {
+    font-size: 15px;
   }
 }
 
