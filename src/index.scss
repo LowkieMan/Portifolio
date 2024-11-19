@@ -145,6 +145,7 @@
     div{
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
 
       img{
         width: 20px;
@@ -167,10 +168,17 @@
 
   .main{
     min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
 
     .search-box{
       margin: 0 auto;
       padding: 10px;
+
+      input{
+        font-size: 16px;
+      }
+  
     }
   }
   

@@ -127,6 +127,7 @@
 .main .search-box div {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .main .search-box div img {
   width: 20px;
@@ -142,10 +143,15 @@
   }
   .main {
     min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
   }
   .main .search-box {
     margin: 0 auto;
     padding: 10px;
+  }
+  .main .search-box input {
+    font-size: 16px;
   }
 }
 
