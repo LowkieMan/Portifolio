@@ -7,181 +7,94 @@
 }
 
 #root {
-  display: flex;
+  font-family: Outfit;
 }
 
-/*Sidebar */
-.sidebar {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: #f0f4f9;
-  padding: 25px 15px;
-
-  img {
-    width: 20px;
-    border-radius: 50%;
-  }
-
-  .menu {
-    display: block;
-    margin-left: 10px;
-    cursor: pointer;
-  }
-
-  .new-chat {
-    margin-top: 50px;
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px 15px;
-    background-color: #e6eaf1;
-    border-radius: 50px;
-    font-size: 14px;
-    color: grey;
-    text-transform: capitalize;
-  }
-
-  .sidebar.recent {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .recent-title {
-    margin-top: 30px;
-    margin-bottom: 20px;
-    text-transform: capitalize;
-  }
-
-  .recent-entry {
-    display: flex;
-    align-items: start;
-    gap: 10px;
-    padding: 10px;
-    padding-right: 40px;
-    border-radius: 50px;
-    color: #282828;
-    cursor: pointer;
-  }
-
-  .recent-entry:hover {
-    background-color: #e6eaf1;
-  }
-
-  .bottom {
-    display: flex;
-    flex-direction: column;
-    text-transform: capitalize;
-  }
-
-  .bottom-item {
-    padding: 10px;
-    cursor: pointer;
-  }
-
-}
 
 /*Main */
-.main {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.main-component{
+  color: white;
+  position: relative;
 
-  .nav {
+  .nav{
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    font-size: 22px;
-    padding: 10px;
-    color: #585858;
-    
-    img {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-    }
+    padding: 1rem;
 
-  }
-
-  .main-container {
-    margin: auto;
-    font-size: 40px;
-    font-weight: 900;
-
-    span {
-        background-image: linear-gradient(16deg, #4b90ff, #ff5546);
+    h1{
+      span{
+        background-image: linear-gradient(to right, lime, red, blue);
         background-clip: text;
         color: transparent;
+      }
     }
 
+    img{
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+
+    }
+  }
+
+  .main-container{
+    margin: 0 auto;
+    background-color: whitesmoke;
+    color: black;
+    width: 70%;
+    overflow:scroll;
+    scrollbar-width: none;
+    min-height: 75vh;
+    padding: 1rem;
+  }
+
+  @media (orientation: portrait) {
+     .main-container{
+      width: 100%;
+     }
+   
   }
 
   .search-box{
+    background-color: whitesmoke;
+    color: black;
+    width: 50%;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 0.5rem;
     display: flex;
-    border-radius: 50px;
+    justify-content: space-between;
+    padding: 0.8rem;
     align-items: center;
-    background-color: #f0f4f9;
-    justify-content: space-between;
-    margin: 0 20px 20px;
-    padding: 10px;
+    border-radius: 4rem;
 
-    input{
+    textarea,
+    img{
+      display: block;
+    }
+
+    textarea{
+      resize: none;
       flex: 1;
-      font-size: 22px;
-      border: none;
+      scrollbar-width: none;
+      overflow: scroll;
       outline: none;
-      background-color: inherit;
-      padding-left: 10px;
-
-      ::placeholder{
-        font-size: 22px;
-        color:#585858;
-      }
+      border: none;
+      padding: 0.2rem 1.4rem;
+      background-color: inherit; 
+      border-radius: inherit; 
+      font-size: 1.5rem;   
     }
 
-    div{
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-
-      img{
-        width: 20px;
-      }
+    img{
+      width: 24px;
     }
   }
 
-}
-
-@media screen and (max-width:425px) {
-
-  #root{
-    display: block;
-    margin: 0 auto;
-  }
-
-  .sidebar{
-    display: none;
-  }
-
-  .main{
-    height: 100vh;
-    display: flex;
-    justify-content: space-between;
-
+  @media (orientation:portrait) {
     .search-box{
-      margin: 0 auto;
-      padding: 10px;
-
-      input{
-        font-size: 15px;
-        ::placeholder{
-          font-size: 15px;
-        }
-      }
-  
-    }
+      width: 90%;
+     }
   }
-  
 }

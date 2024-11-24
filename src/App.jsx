@@ -1,15 +1,10 @@
-import React from "react";
-import Sidebar from "./components/sidebar/sidebar";
-import Main from "./components/main/main";
+import React from 'react'
+import Article from './components/Article'
 
- const App = () => {
+function App() {
   return (
-    <>
-      <Sidebar/>
-      <Main />
-    </>
-
+    <Article/>
   )
- }
+}
 
- export default App
+export default App
