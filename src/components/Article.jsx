@@ -7,7 +7,7 @@ const apiKey = import.meta.env.VITE_ACCESS_KEY;
 const genAI = new GoogleGenerativeAI(apiKey);
 
 const model = genAI.getGenerativeModel({
-  model: "gemini-1.5-pro",
+  model: "gemini-1.5-flash",
 });
 
 const generationConfig = {
@@ -63,8 +63,8 @@ const Article = () => {
       </div>
       
       <div className="search-box">
-        <textarea rows="1" type="text" placeholder="Enter a prompt here"
-        
+        <textarea rows="1" type="text" 
+          placeholder="Enter a prompt here"
           value={prompt}
           onChange={(e) => setPrompt(e.target.value)}
         ></textarea>
