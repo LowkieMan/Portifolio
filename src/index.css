@@ -8,17 +8,28 @@
 
 #root {
   font-family: Outfit;
+  min-height: 100vh;
+  background-color: black;
 }
 
 /*Main */
 .main-component {
   color: white;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: inherit;
 }
 .main-component .nav {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
+  background-color: gray;
+  box-shadow: 0 1px 1rem white;
+}
+.main-component .nav h1 {
+  margin: 0 auto;
 }
 .main-component .nav h1 span {
   background-image: linear-gradient(to right, lime, red, blue);
@@ -32,13 +43,68 @@
 }
 .main-component .main-container {
   margin: 0 auto;
-  background-color: whitesmoke;
-  color: black;
   width: 70%;
   overflow: scroll;
+  overflow-y: auto;
   scrollbar-width: none;
-  min-height: 60vh;
   padding: 1rem;
+  border-radius: 1rem;
+  min-height: 79vh;
+}
+.main-component .main-container .greeting-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: inherit;
+  overflow: hidden;
+}
+.main-component .main-container .greeting-message span {
+  background-image: linear-gradient(90deg, lime, red, blue);
+  background-clip: text;
+  color: transparent;
+  font-size: 3rem;
+}
+.main-component .main-container .user-message {
+  margin: 1rem auto;
+  color: grey;
+}
+.main-component .main-container .user-message img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+  background-color: white;
+}
+.main-component .main-container .ai-response {
+  display: flex;
+}
+.main-component .main-container .ai-response img {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  background-color: white;
+  border-radius: 50%;
+}
+.main-component .main-container .ai-response .ai-message {
+  text-align: justify;
+  color: lightgray;
+}
+.main-component .main-container .loading-response hr {
+  width: 80%;
+  height: 1rem;
+  background-image: linear-gradient(90deg, lime, red, white, blue, lime);
+  margin: 0.5rem 0;
+  border: none;
+  background-size: 300% 100%;
+  animation: colorShift 2s linear infinite;
+}
+@keyframes colorShift {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: -100% 50%;
+  }
 }
 @media (orientation: portrait) {
   .main-component .main-container {
@@ -57,13 +123,20 @@
   justify-content: space-between;
   padding: 0.8rem;
   align-items: center;
-  border-radius: 4rem;
+  border-radius: 1rem;
 }
 .main-component .search-box textarea,
 .main-component .search-box img {
   display: block;
 }
 .main-component .search-box textarea {
+  width: 100%; /* Make it take full width */
+  min-height: 2rem; /* Minimum height for 1 row */
+  max-height: 10rem; /* Maximum height (about 10 rows) */
+  overflow-y: auto; /* Make it scrollable when it exceeds max-height */
+  padding: 0.5rem; /* Padding for better visual */
+  resize: none; /* Prevent manual resizing */
+  font-size: 1rem;
   resize: none;
   flex: 1;
   scrollbar-width: none;
@@ -73,7 +146,7 @@
   padding: 0.2rem 1.4rem;
   background-color: inherit;
   border-radius: inherit;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .main-component .search-box img {
   width: 24px;
