@@ -47,6 +47,9 @@
   scrollbar-width: none;
   padding: 1rem;
   border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .main-component .main-container .greeting-message {
   display: flex;

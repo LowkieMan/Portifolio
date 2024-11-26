@@ -52,6 +52,10 @@
     scrollbar-width: none;
     padding: 1rem;
     border-radius: 1rem;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     .greeting-message{
       display: flex;
