@@ -19,7 +19,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: inherit;
 }
 .main-component .nav {
   display: flex;
@@ -44,12 +43,10 @@
 .main-component .main-container {
   margin: 0 auto;
   width: 70%;
-  overflow: scroll;
   overflow-y: auto;
   scrollbar-width: none;
   padding: 1rem;
   border-radius: 1rem;
-  min-height: 79vh;
 }
 .main-component .main-container .greeting-message {
   display: flex;
