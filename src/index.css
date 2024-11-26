@@ -26,12 +26,14 @@
   padding: 1rem;
   background-color: gray;
   box-shadow: 0 1px 1rem white;
+  position: sticky;
+  top: 0;
 }
 .main-component .nav h1 {
   margin: 0 auto;
 }
 .main-component .nav h1 span {
-  background-image: linear-gradient(to right, lime, red, blue);
+  background-image: linear-gradient(16deg, lime, red, blue);
   background-clip: text;
   color: transparent;
 }
@@ -59,7 +61,7 @@
   overflow: hidden;
 }
 .main-component .main-container .greeting-message span {
-  background-image: linear-gradient(90deg, lime, red, blue);
+  background-image: linear-gradient(16deg, lime, red, blue);
   background-clip: text;
   color: transparent;
   font-size: 3rem;
@@ -87,16 +89,20 @@
 }
 .main-component .main-container .ai-response .ai-message {
   text-align: justify;
-  color: lightgray;
+  color: rgba(211, 211, 211, 0.638);
+}
+.main-component .main-container .loading-response :nth-child(2) {
+  width: 70%;
 }
 .main-component .main-container .loading-response hr {
   width: 80%;
-  height: 1rem;
-  background-image: linear-gradient(90deg, lime, red, white, blue, lime);
+  height: 0.8rem;
+  background-image: linear-gradient(16deg, grey, black, grey);
   margin: 0.5rem 0;
   border: none;
   background-size: 300% 100%;
   animation: colorShift 2s linear infinite;
+  border-radius: 0.2rem;
 }
 @keyframes colorShift {
   0% {
