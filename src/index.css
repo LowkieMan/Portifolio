@@ -9,7 +9,7 @@
 #root {
   font-family: Outfit;
   min-height: 100vh;
-  background-color: black;
+  background: #000;
 }
 
 /*Main */
@@ -24,18 +24,11 @@
   display: flex;
   justify-content: space-between;
   padding: 1rem;
-  background-color: gray;
-  box-shadow: 0 1px 1rem white;
   position: sticky;
   top: 0;
 }
 .main-component .nav h1 {
   margin: 0 auto;
-}
-.main-component .nav h1 span {
-  background-image: linear-gradient(16deg, lime, red, blue);
-  background-clip: text;
-  color: transparent;
 }
 .main-component .nav img {
   width: 50px;
@@ -43,8 +36,8 @@
   border-radius: 50%;
 }
 .main-component .main-container {
-  margin: 0 auto;
-  width: 70%;
+  margin: 2rem auto 5rem auto;
+  width: 50%;
   overflow-y: auto;
   scrollbar-width: none;
   padding: 1rem;
@@ -90,6 +83,10 @@
 .main-component .main-container .ai-response .ai-message {
   text-align: justify;
   color: rgba(211, 211, 211, 0.638);
+}
+.main-component .main-container .ai-response .ai-message ul,
+.main-component .main-container .ai-response .ai-message ol, .main-component .main-container .ai-response .ai-message li {
+  margin: 0 1rem;
 }
 .main-component .main-container .loading-response :nth-child(2) {
   width: 70%;

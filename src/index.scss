@@ -9,7 +9,7 @@
 #root {
   font-family: Outfit;
   min-height: 100vh;
-  background-color: black;
+  background: #000;
 }
 
 
@@ -25,18 +25,11 @@
     display: flex;
     justify-content: space-between;
     padding: 1rem;
-    background-color: gray;
-    box-shadow: 0 1px 1rem white;
     position: sticky;
     top: 0;
 
     h1{
       margin: 0 auto;
-      span{
-        background-image: linear-gradient(16deg, lime, red, blue);
-        background-clip: text;
-        color: transparent;
-      }
     }
 
     img{
@@ -48,8 +41,8 @@
   }
 
   .main-container{
-    margin: 0 auto;
-    width: 70%;
+    margin: 2rem auto 5rem auto;
+    width: 50%;
     overflow-y: auto;
     scrollbar-width: none;
     padding: 1rem;
@@ -99,6 +92,12 @@
       .ai-message{
         text-align: justify;
         color: rgba(211, 211, 211, 0.638);
+
+        ul,
+        ol,li{
+        margin: 0 1rem;
+        }
+
       }
     }
 

@@ -15,6 +15,73 @@ const generationConfig = {
   responseMimeType: "text/plain",
 };
 
+// Function to format AI response with HTML
+const formatResponseWithHTML = (response) => {
+  // Escape raw HTML special characters early
+  response = response.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+  // Replace code blocks (```)
+  response = response.replace(/```([a-z]*)\n([\s\S]*?)```/g, '<pre><code class="$1">$2</code></pre>');
+
+  // Replace inline code (` `)
+  response = response.replace(/`([^`]+)`/g, "<code>$1</code>");
+
+  // Replace blockquotes (>)
+  response = response.replace(/^> (.*?)(?=\n|$)/gm, "<blockquote>$1</blockquote>");
+
+  // Replace headers (h1-h6)
+  response = response.replace(/^###### (.*?)$/gm, "<h6>$1</h6>");
+  response = response.replace(/^##### (.*?)$/gm, "<h5>$1</h5>");
+  response = response.replace(/^#### (.*?)$/gm, "<h4>$1</h4>");
+  response = response.replace(/^### (.*?)$/gm, "<h3>$1</h3>");
+  response = response.replace(/^## (.*?)$/gm, "<h2>$1</h2>");
+  response = response.replace(/^# (.*?)$/gm, "<h1>$1</h1>");
+
+  // Replace horizontal rules (---)
+  response = response.replace(/^---$/gm, "<hr>");
+
+  // Replace unordered list items (- or *)
+  response = response.replace(/^[\*\-] (.*?)(?=\n|$)/gm, "<li>$1</li>");
+  response = response.replace(/(<li>.*<\/li>)/g, "<ul>$1</ul>");
+
+  // Replace ordered list items (1., 2., ...) with incremental numbering
+  let orderedListCount = 0; // Counter for ordered list items
+  response = response.replace(/^\d+\.\s(.*?)(?=\n|$)/gm, (match, content) => {
+    orderedListCount++; // Increment the ordered list count
+    return `<li>${content}</li>`;
+  });
+
+  // Wrap all the <li> items with <ol> or <ul> based on the context
+  response = response.replace(/(<li>.*<\/li>)/g, (match) => {
+    if (match.indexOf("<ol>") === -1 && match.indexOf("<ul>") === -1) {
+      return "<ul>" + match + "</ul>"; // If it's an unordered list item, wrap in <ul>
+    }
+    return match; // For ordered list items, don't change
+  });
+
+  // Replace bold text (** or __)
+  response = response.replace(/\*\*(.*?)\*\*/g, "<b>$1</b>");
+  response = response.replace(/__(.*?)__/g, "<b>$1</b>");
+
+  // Replace italic text (* or _)
+  response = response.replace(/\*(.*?)\*/g, "<i>$1</i>");
+  response = response.replace(/_(.*?)_/g, "<i>$1</i>");
+
+  // Replace strikethrough text (~~)
+  response = response.replace(/~~(.*?)~~/g, "<s>$1</s>");
+
+  // Replace links ([text](url))
+  response = response.replace(
+    /\[([^\]]+)\]\((https?:\/\/[^\s]+)\)/g,
+    '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>'
+  );
+
+  // Replace paragraphs
+  response = response.replace(/(?:\n|^)([^\n<][^<]*)(?=\n|$)/g, "<p>$1</p>");
+
+  return response;
+};
+
 const Article = () => {
   const [prompt, setPrompt] = useState("");
   const [chatHistory, setChatHistory] = useState([]);
@@ -65,9 +132,14 @@ const Article = () => {
       const result = await chatSession.sendMessage(prompt);
       const aiResponse = result.response?.text?.() || "No response received.";
 
+      // Format the response with HTML
+      const formattedResponse = formatResponseWithHTML(aiResponse);
+
       setChatHistory((prev) =>
         prev.map((entry, index) =>
-          index === prev.length - 1 ? { ...entry, ai: aiResponse } : entry
+          index === prev.length - 1
+            ? { ...entry, ai: formattedResponse }
+            : entry
         )
       );
     } catch (err) {
@@ -94,12 +166,9 @@ const Article = () => {
     }
   };
 
-  // Function to start a new chat
   const startNewChat = () => {
-    // Reset chat history and greeting
     setChatHistory([]);
     setGreeting("Hello, developer!");
-    // Reinitialize the chat session
     chatSession = genAI.getGenerativeModel({
       model: "gemini-1.5-flash",
     }).startChat({
@@ -117,15 +186,13 @@ const Article = () => {
         <img src={assets.aice} alt="AiCE Logo" />
       </div>
 
-      <div
-        className="main-container"
-        ref={chatContainerRef} 
+      <div className="main-container"
+        ref={chatContainerRef}
         style={{
           overflowY: "auto",
           height: "400px",
         }}
       >
-        {/* Display greeting message if no chat history exists */}
         {greeting && (
           <div className="greeting-message">
             <p> <span>{greeting}</span></p>
